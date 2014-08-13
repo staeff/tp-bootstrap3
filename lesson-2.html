@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lesson 2 - The Grid System</title>
+    <meta name="description" content="Bootstrap Grid - Examples">
+    <meta name="author" content="Stephan Klinger">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Bootstrap <small>for Web Design</small></h1>
+                <h3>Lesson 2: The Grid System</h3>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end jumbotron -->
+
+    </header>
+
+    <div class="demo-area">
+        <div class="container">
+            <!--split row in two-->
+            <div class="row">
+                <div>col-md-6, so columns start stacking at small screen size</div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">eins</div>
+                <div class="col-md-6">zwei</div>
+            </div>
+            <div class="row">
+                <div>col-sm-offset-2, offset goes away on extra small screen size</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-2">col with offset</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+         <hr>
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-5">
+                <small>a footer - yeah! in the middle.</small>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </footer>
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
