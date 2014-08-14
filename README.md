@@ -21,7 +21,19 @@ Twitter's Bootstrap is an excellent set of carefully crafted user interface elem
 * the column numbers for a certain size, defines the size of bigger sizes too, if no specific value is given. ie. if you have col-sm-2 and no
 specific class for middle and large they are also 2.
 
+### Buttons and Icons
+
+* warum muss die Klasse "btn bt-default" heissen? Warum reicht nicht "btn-default"?
+* classes for button colors: default, primary, success, info, warning, danger, link
+* classes for button sizes: btn-lg, btn-sm, btn-xs
+* buttonable elements: a, button (type: button, submit, reset), input (type: submit)
+
+### Forms
+
+
+
 ## Todo
 
 * make a cool navigation for all the tutorial files
 * bring kuler color-schemes and bootstrap custom build together.
+* a glyph-icon gallery that works on a mobile phone
