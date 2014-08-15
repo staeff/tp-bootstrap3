@@ -1,7 +1,6 @@
 # Bootstrap for Web Designers
 
 https://webdesign.tutsplus.com/courses/bootstrap-3-for-web-design/
-Instructor: Adi Purdila
 
 Twitter's Bootstrap is an excellent set of carefully crafted user interface elements, layouts and JavaScript tools, easily available to use in your next web design project. This course takes you through Bootstrap, from top to bottom.
 
@@ -30,7 +29,15 @@ specific class for middle and large they are also 2.
 
 ### Forms
 
+* Classes introduced in this chapter
+  * `input-sm`, `input-lg` - the size of input fields
+  * `sr-only` - only shown for screenreader
+  * `help-block` - special formatting for a paragraph that describes the expected content of the input
+  * has-classes: `has-error`, `has-warning`, `has-feedback`, `has-success`
 
+* Add glyphicon to an input field - div.form-group needs to have the class `has-feedback` and contains a span.glyphicon.glyphicon-ok.form-control-feedback
+
+* control the width of input fields with the column-sizes of the grid system. wrap an input.formcontrol in a div.col-sm-3 (as example).
 
 ## Todo
 
