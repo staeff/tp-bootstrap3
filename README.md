@@ -44,6 +44,10 @@ specific class for middle and large they are also 2.
 Was genau ist die Funktion von data-toggle="dropdown"?
 Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on for closing dropdown menus at an application level, so it's a good idea to always use it.
 
+### Tabs
+
+
+
 ## Todo
 
 * make a cool navigation for all the tutorial files
