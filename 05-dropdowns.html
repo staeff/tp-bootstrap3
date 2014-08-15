@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Dropdowns</title>
+	<meta name="description" content="">
+	<meta name="author" content="Stephan Klinger">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+	<header>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Bootstrap <small>for Web Design</small></h1>
+				<h3>Dropdowns</h3>
+			</div> <!-- end container -->
+		</div> <!-- end jumbotron -->
+	</header>
+
+	<div class="demo-area">
+		<div class="container">
+			<div class="dropdown">
+				<button class="btn btn-info dropdown-toggle" type="button" id="dd-menu" data-toggle="dropdown">
+					Burger Menu <span class="caret"></span>
+				</button>
+
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation" class="dropdown-header">Vegetarian Burger</li>
+					<li role="presentation" class="disabled"><a href="#" role="menuitem" tabindex="-1">Avocado Burger (out of stock)</a></li>
+					<li role="presentation"><a href="#" role="menuitem" tabindex="-1">Tofu Burger</a></li>
+					<li role="presentation"><a href="#" role="menuitem" tabindex="-1">Saitan Burger</a></li>
+					<li role="presentation" class="divider"></li>
+					<li role="presentation" class="dropdown-header">Meat Burger</li>
+					<li role="presentation"><a href="#" role="menuitem" tabindex="-1">Hamburger</a></li>
+					<li role="presentation"><a href="#" role="menuitem" tabindex="-1">Chickenburger</a></li>
+                </ul>
+			</div>
+		</div>
+	</div> <!-- end demo-area -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+
+</body>
+</html>
