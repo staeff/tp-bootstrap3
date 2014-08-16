@@ -50,6 +50,10 @@ Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on f
 
 * There are some classes to give elements the right alignment in the Navbar: navbar-btn, navbar-text
 
+### List groups
+
+* There is an `ul` and a `div` version of the list group element
+
 ## Todo
 
 * make a cool navigation for all the tutorial files
