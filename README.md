@@ -46,7 +46,9 @@ Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on f
 
 ### Tabs
 
+### Navbar
 
+* There are some classes to give elements the right alignment in the Navbar: navbar-btn, navbar-text
 
 ## Todo
 
