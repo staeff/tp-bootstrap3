@@ -54,6 +54,8 @@ Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on f
 
 * There is an `ul` and a `div` version of the list group element
 
+### Panels
+
 ## Todo
 
 * make a cool navigation for all the tutorial files
