@@ -62,6 +62,11 @@ Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on f
 
 * role="xxx" - used for accessibility reasons. Whatever that means.
 
+### Collapse
+
+Modification: How to make the full area of the header clickable: http://stackoverflow.com/questions/19236717/how-to-make-bootstrap-accordion-collapse-when-clicking-div
+
+### Carousel
 
 ## Todo
 
