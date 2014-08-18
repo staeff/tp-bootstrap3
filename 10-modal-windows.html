@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap for Web Design</title>
+    <meta name="description" content="Description">
+    <meta name="author" content="Author">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Bootstrap <small>for Web Design</small></h1>
+                <h3>Modal Windows</h3>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end jumbotron -->
+    </header>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">Modal Window</button>
+
+        <div class="modal fade" id="modal-1" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal title</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo deserunt corporis esse qui. Eaque atque aliquam quisquam excepturi cum suscipit voluptatibus recusandae natus at sapiente! Ad beatae atque modi natus!
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <a href="" class="btn btn-primary">Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

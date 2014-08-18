@@ -56,6 +56,13 @@ Wird von JavaScript verwendet. The data-toggle=dropdown attribute is relied on f
 
 ### Panels
 
+### Modal Windows
+
+* tabindex="-1" - this prevents, that the content is reached while tabbing through the side. Mostly used for initially invisible content like modal windows
+
+* role="xxx" - used for accessibility reasons. Whatever that means.
+
+
 ## Todo
 
 * make a cool navigation for all the tutorial files
