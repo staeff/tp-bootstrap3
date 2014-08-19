@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap Skeleton</title>
+    <meta name="description" content="Overview Documentation Bootstrap 3">
+    <meta name="author" content="Stephan Klinger">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap files -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        .nav>li>a {
+            padding-left: 18px;
+            font-weight: 700;
+            color: #563d7c;
+            background-color: transparent;
+        }
+        .nav .nav>li>a {
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 30px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Overview Bootstrap 3 - Documentation Sections</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>CSS</h3>
+                <ul class="nav">
+                    <li>
+                        <a href="#overview">Overview</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#overview-doctype">HTML5 doctype</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#overview-mobile">Mobile first</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#overview-type-links">Typography and links</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#overview-normalize">Normalize.css</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#overview-container">Containers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#grid">Grid system</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#grid-intro">Introduction</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-media-queries">Media queries</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-options">Grid options</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-example-basic">Ex: Stacked-to-horizontal</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-example-fluid">Ex: Fluid container</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-example-mixed">Ex: Mobile and desktops</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-example-mixed-complete">Ex: Mobile, tablet, desktops</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-example-wrapping">Ex: Column wrapping</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-responsive-resets">Responsive column resets</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-offsetting">Offsetting columns</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-nesting">Nesting columns</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-column-ordering">Column ordering</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#grid-less">Less mixins and variables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#type">Typography</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#type-headings">Headings</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-body-copy">Body copy</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-inline-text">Inline text elements</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-alignment">Alignment classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-transformation">Transformation classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-abbreviations">Abbreviations</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-addresses">Addresses</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-blockquotes">Blockquotes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#type-lists">Lists</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#code">Code</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#code-inline">Inline code</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#code-user-input">User input</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#code-block">Blocks of code</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#code-variables">Variables</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#code-sample-output">Sample output</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#tables">Tables</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#tables-example">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-striped">Striped rows</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-bordered">Bordered table</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-hover-rows">Hover rows</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-condensed">Condensed table</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-contextual-classes">Contextual classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#tables-responsive">Responsive tables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#forms">Forms</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#forms-example">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-inline">Inline form</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-horizontal">Horizontal form</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-controls">Supported controls</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-controls-static">Static control</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-control-focus">Focus state</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-control-disabled">Disabled state</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-control-readonly">Readonly state</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-control-validation">Validation states</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-control-sizes">Control sizing</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#forms-help-text">Help text</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#buttons">Buttons</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#buttons-options">Options</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#buttons-sizes">Sizes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#buttons-active">Active state</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#buttons-disabled">Disabled state</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#buttons-tags">Button tags</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#images">Images</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#images-responsive">Responsive images</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#images-shapes">Image shapes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/css/#helper-classes">Helper classes</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-colors">Contextual colors</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-backgrounds">Contextual backgrounds</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-close">Close icon</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-carets">Carets</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-floats">Quick floats</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-center">Center content blocks</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-clearfix">Clearfix</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-show-hide">Showing and hiding content</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-screen-readers">Screen reader content</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#helper-classes-image-replacement">Image replacement</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/css/#responsive-utilities">Responsive utilities</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#responsive-utilities-classes">Available classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#responsive-utilities-print">Print classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#responsive-utilities-tests">Test cases</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/css/#less">Using Less</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#less-bootstrap">Compiling Bootstrap</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#less-variables">Variables</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#less-mixins-vendor">Vendor mixins</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#less-mixins-utility">Utility mixins</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/css/#sass">Using Sass</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/css/#sass-contents">What's included</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/css/#sass-installation">Rails install</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Components</h3>
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="http://getbootstrap.com/components/#glyphicons">Glyphicons</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#glyphicons-glyphs">Available glyphs</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#glyphicons-how-to-use">How to use</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#glyphicons-examples">Examples</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#dropdowns">Dropdowns</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#dropdowns-example">Example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#dropdowns-alignment">Alignment options</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#dropdowns-headers">Headers</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#dropdowns-disabled">Disabled menu items</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#btn-groups">Button groups</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-single">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-toolbar">Button toolbar</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-sizing">Sizing</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-nested">Nesting</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-vertical">Vertical variation</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-groups-justified">Justified link variation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#btn-dropdowns">Button dropdowns</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#btn-dropdowns-single">Single button dropdowns</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-dropdowns-split">Split button dropdowns</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-dropdowns-sizing">Sizing</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#btn-dropdowns-dropup">Dropup variation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#input-groups">Input groups</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#input-groups-basic">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#input-groups-sizing">Sizing</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#input-groups-checkboxes-radios">Checkbox and radios addons</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#input-groups-buttons">Button addons</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#input-groups-buttons-dropdowns">Buttons with dropdowns</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#input-groups-buttons-segmented">Segmented buttons</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#nav">Navs</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#nav-tabs">Tabs</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#nav-pills">Pills</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#nav-justified">Justified nav</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#nav-disabled-links">Disabled links</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#nav-dropdowns">Using dropdowns</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#navbar">Navbar</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#navbar-default">Default navbar</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-forms">Forms</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-buttons">Buttons</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-text">Text</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-links">Non-nav links</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-component-alignment">Component alignment</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-fixed-top">Fixed to top</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-fixed-bottom">Fixed to bottom</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-static-top">Static top</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#navbar-inverted">Inverted navbar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#breadcrumbs">Breadcrumbs</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#pagination">Pagination</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#pagination-default">Default pagination</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#pagination-pager">Pager</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#labels">Labels</a>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#badges">Badges</a>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#jumbotron">Jumbotron</a>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#page-header">Page header</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#thumbnails">Thumbnails</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#thumbnails-default">Default example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#thumbnails-custom-content">Custom content</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#alerts">Alerts</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#alerts-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#alerts-dismissible">Dismissible alerts</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#alerts-links">Links in alerts</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#progress">Progress bars</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#progress-basic">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-label">With label</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-low-percentages">Low percentages</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-alternatives">Contextual alternatives</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-striped">Striped</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-animated">Animated</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#progress-stacked">Stacked</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#media">Media object</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#media-default">Default media</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#media-list">Media list</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/components/#list-group">List group</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#list-group-basic">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#list-group-badges">Badges</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#list-group-linked">Linked items</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#list-group-disabled">Disabled items</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#list-group-contextual-classes">Contextual classes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#list-group-custom-content">Custom content</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                                <a href="http://getbootstrap.com/components/#panels">Panels</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/components/#panels-basic">Basic example</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#panels-heading">Panel with heading</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#panels-alternatives">Contextual alternatives</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#panels-tables">With tables</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/components/#panels-list-group">With list groups</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#responsive-embed">Responsive embed</a>
+                    </li>
+                    <li><a href="http://getbootstrap.com/components/#wells">Wells</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>JavaScript</h3>
+                <ul class="nav bs-docs-sidenav">
+
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#js-overview">Overview</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#js-individual-compiled">Individual or compiled</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#js-data-attrs">Data attributes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#js-programmatic-api">Programmatic API</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#js-noconflict">No conflict</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#js-events">Events</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#callout-third-party-libs">Third-party libraries</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://getbootstrap.com/javascript/#transitions">Transitions</a>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#modals">Modal</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#modals-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#modals-sizes">Sizes</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#modals-remove-animation">Remove animation</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#modals-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#dropdowns">Dropdown</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#dropdowns-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#dropdowns-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#scrollspy">Scrollspy</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#scrollspy-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#scrollspy-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#tabs">Tab</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#tabs-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#tabs-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#tooltips">Tooltip</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#tooltips-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#tooltips-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#popovers">Popover</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#popovers-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#popovers-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#alerts">Alert</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#alerts-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#alerts-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#buttons">Button</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#buttons-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#buttons-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#collapse-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#collapse-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#carousel">Carousel</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#carousel-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#carousel-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://getbootstrap.com/javascript/#affix">Affix</a>
+                        <ul class="nav">
+                            <li><a href="http://getbootstrap.com/javascript/#affix-examples">Examples</a>
+                            </li>
+                            <li><a href="http://getbootstrap.com/javascript/#affix-usage">Usage</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+    // Open all links in new tab
+    $(function(){
+          $("a").attr("target","_blank");
+    });
+    </script>
+</body>
+
+</html>
