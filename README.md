@@ -70,6 +70,7 @@ Modification: How to make the full area of the header clickable: http://stackove
 
 ## Todo
 
+* publish on gh-pages
 * make a cool navigation for all the tutorial files
 * bring kuler color-schemes and bootstrap custom build together.
 * a glyph-icon gallery that works on a mobile phone
