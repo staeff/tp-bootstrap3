@@ -74,3 +74,6 @@ Modification: How to make the full area of the header clickable: http://stackove
 * make a cool navigation for all the tutorial files
 * bring kuler color-schemes and bootstrap custom build together.
 * a glyph-icon gallery that works on a mobile phone
+
+* on bootstrap3-docs-overview.html: let the structure be generated (Plain JS or Handlebars.js?). Add Filter-Script like https://github.com/DeuxHuitHuit/quicksearch
+* use bower and grunt on the project?
