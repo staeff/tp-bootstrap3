@@ -4,6 +4,10 @@ https://webdesign.tutsplus.com/courses/bootstrap-3-for-web-design/
 
 Twitter's Bootstrap is an excellent set of carefully crafted user interface elements, layouts and JavaScript tools, easily available to use in your next web design project. This course takes you through Bootstrap, from top to bottom.
 
+## News
+
+* Overwiew (like a sitemap) of bootstrap 3 documentation available at https://vision-index.codio.io/bootstrap3-docs-overview.html (gh-pages coming soon).
+
 ## Notes
 
 ### The Grid System
