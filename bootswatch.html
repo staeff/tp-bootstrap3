@@ -21,6 +21,9 @@
         .dropdown-menu a, #brand {
             text-transform: capitalize;
         }
+        #accordion-qa .panel-heading {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -291,8 +294,8 @@
 
             <div class="panel-group" id="accordion-qa">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title"><a href="#qa-1" data-toggle="collapse" data-parent="#accordion-qa">Question 1</a></h4>
+                    <div class="panel-heading" data-target="#qa-1" data-toggle="collapse" data-parent="#accordion-qa">
+                        <h4 class="panel-title">Question 1</h4>
                     </div>
                     <div class="panel-collapse collapse in" id="qa-1">
                         <div class="panel-body">
@@ -305,8 +308,8 @@
                 <!-- end panel -->
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title"><a href="#qa-2" data-toggle="collapse" data-parent="#accordion-qa">Question 2</a></h4>
+                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-qa" data-target="#qa-2">
+                        <h4 class="panel-title">Question 2</h4>
                     </div>
                     <div class="panel-collapse collapse" id="qa-2">
                         <div class="panel-body">
@@ -319,8 +322,8 @@
                 <!-- end panel -->
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title"><a href="#qa-3" data-toggle="collapse" data-parent="#accordion-qa">Question 3</a></h4>
+                    <div class="panel-heading"  data-target="#qa-3" data-toggle="collapse" data-parent="#accordion-qa">
+                        <h4 class="panel-title">Question 3</h4>
                     </div>
                     <div class="panel-collapse collapse" id="qa-3">
                         <div class="panel-body">
