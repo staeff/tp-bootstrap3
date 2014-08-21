@@ -72,6 +72,12 @@ Modification: How to make the full area of the header clickable: http://stackove
 
 ### Carousel
 
+
+
+### List of bootswatch theme names
+
+themes = ["cerulean", "cosmo", "cyborg", "darkly", "flatly", "journal", "lumen", "paper", "readable", "sandstone", "simplex", "slate", "spacelab", "superhero", "united", "yeti"]
+
 ## Todo
 
 * publish on gh-pages
