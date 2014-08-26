@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Twitter Bootstrap Skeleton</title>
+    <meta name="description" content="Skeleton HTML for Twitter Bootstrap 3.2.0">
+    <meta name="author" content="Author">
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap files -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <script id="blogTemplate" type="tuts/template">
+        <h2> {{title}} </h2>
+        <h3> {{subtitle}} </h3>
+    </script>
+    
+    <div class="container">
+     <h1>Das ist ein Beispiel für eine einfache mit jQuery implementierte Templatingfunktion</h1>
+       <div class="row">
+         <div class="col-md-4" id="target">
+         </div>
+    </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <script>
+        (function() {
+            var content = [{
+                "title": "Overview",
+                "subtitle": "This is the overview"
+            }, {
+                "title": "Overview 2",
+                "subtitle": "This is the overview 2"
+            }],
+                template = $.trim($("#blogTemplate").html()),
+                fragment = '';
+            
+            $.each(content, function(index, obj) {
+                // console.log(index);
+                console.log(obj.title);
+                fragment += 
+                    template.replace( /{{title}}/ig, obj.title )
+                            .replace( /{{subtitle}}/ig, obj.subtitle );
+            });
+            //console.log(fragment);
+            $('#target').append(fragment);
+        })();
+    </script>
+    
+</body>
+
+</html>
