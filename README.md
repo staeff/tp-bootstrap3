@@ -6,15 +6,20 @@ Twitter's Bootstrap is an excellent set of carefully crafted user interface elem
 
 ## News
 
-* Overwiew (like a sitemap) of bootstrap 3 documentation available at https://vision-index.codio.io/bootstrap3-docs-overview.html (gh-pages coming soon).
+* Overwiew (like a sitemap) of bootstrap 3 documentation available at https://vision-index.codio.io/bootstrap3-docs-overview.html.
+* Overview redone using Handlebarsjs for templating. More flexible to experiment with changes (e.g. collapsibles) https://vision-index.codio.io/overview.html
 * A gallery of the different themes provided by http://bootswatch.com/ available at https://vision-index.codio.io/bootswatch.html
-
 
 ## Notes
 
+
+
 ### The Grid System
 
-* "container" vs. "container-fluid"? I don't really understand this yet. How are they behaving different?
+* The containing element requiered by Bootstrap must be `div.container`, `div.container-fluid`. It wraps the site contents and houses the grid system. It is not nestable! 
+  `.container` - responsive fixed width container
+  `.container-fluid` - full width container, spanning the entire width of the viewport.
+
 * if you go over 12 columns the layouts makes a break
 * you can move cols around with an offset-class, e.g. col-lg-offset-2
 * Nesting: The rule of 12 columns applies for nested divs too. They use up the space given by their parent.
