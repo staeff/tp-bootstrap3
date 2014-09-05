@@ -12,11 +12,21 @@
     <!-- CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <style>
-        .nav>li>a {
+        .nav>li>a, .nav>li>span {
             padding-left: 18px;
             font-weight: 700;
             color: #563d7c;
             background-color: transparent;
+        }
+        .nav>li>span {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #898989;
+        }
+        .nav>li>span:hover {
+         background-color: #eee;
         }
         .nav .nav>li>a {
             padding-top: 1px;
@@ -28,6 +38,8 @@
         a {
             text-decoration: none;
         }
+        
+        
     </style>
 </head>
 
@@ -36,22 +48,22 @@
     <div class="container">
         <h1 class="text-center">Overview Bootstrap 3 - Documentation Sections</h1>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" id="colcss">
                 <h3>CSS</h3>
                 <ul class="nav">
                     <li>
-                       <a href="#overview">Overview</a>
-                        <ul class="nav" id="overview_css">
+                        <span href="#" data-toggle="collapse" data-target="#overview_css" data-parent="#colcss">Overview</span>
+                        <ul class="nav collapse" id="overview_css">
                         <script id="css_overview_template" type="text/x-handlebars-template">
                         {{#each overview_css}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
-                        {{/each}}  
+                        {{/each}}
                         </script>
                         </ul>
                     </li>
                     <li>
-                        <a href="#grid">Grid system</a>
-                        <ul class="nav" id="grid">
+                        <span href="#" data-toggle="collapse" data-target="#grid" data-parent="#colcss">Grid system</span>
+                        <ul class="nav collapse" id="grid">
                         <script id="grid_template" type="text/x-handlebars-template">
                         {{#each grid}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -60,8 +72,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#type">Typography</a>
-                        <ul class="nav" id="typography">
+                        <span href="#" data-toggle="collapse" data-target="#typography" data-parent="#colcss">Typography</span>
+                        <ul class="nav collapse" id="typography">
                         <script id="typography_template" type="text/x-handlebars-template">
                         {{#each typography}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -70,8 +82,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#code">Code</a>
-                        <ul class="nav" id="code">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#code">Code</span>
+                        <ul class="nav collapse" id="code">
                         <script id="code_template" type="text/x-handlebars-template">
                         {{#each code}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -80,8 +92,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#tables">Tables</a>
-                        <ul class="nav" id="tables">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#tables">Tables</span>
+                        <ul class="nav collapse" id="tables">
                         <script id="tables_template" type="text/x-handlebars-template">
                         {{#each tables}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -90,8 +102,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#forms">Forms</a>
-                        <ul class="nav" id="forms">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#forms">Forms</span>
+                        <ul class="nav collapse" id="forms">
                         <script id="forms_template" type="text/x-handlebars-template">
                         {{#each forms}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -100,8 +112,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#buttons">Buttons</a>
-                        <ul class="nav" id="buttons">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#buttons">Buttons</span>
+                        <ul class="nav collapse" id="buttons">
 <script id="buttons_template" type="text/x-handlebars-template">
                         {{#each buttons}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -110,8 +122,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#images">Images</a>
-                        <ul class="nav" id="images">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#images">Images</span>
+                        <ul class="nav collapse" id="images">
                             <script id="images_template" type="text/x-handlebars-template">
                         {{#each images}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -120,8 +132,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/css/#helper-classes">Helper classes</a>
-                        <ul class="nav" id="helperclasses">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#helperclasses">Helper classes</span>
+                        <ul class="nav collapse" id="helperclasses">
 <script id="helper_classes_template" type="text/x-handlebars-template">
                         {{#each helperclasses}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -130,8 +142,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/css/#responsive-utilities">Responsive utilities</a>
-                        <ul class="nav" id="responsive_utilities">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#responsive_utilities">Responsive utilities</span>
+                        <ul class="nav collapse" id="responsive_utilities">
 <script id="responsive_utilities_template" type="text/x-handlebars-template">
                         {{#each responsive_utilities}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -140,8 +152,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/css/#less">Using Less</a>
-                        <ul class="nav" id="less">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#less">Using Less</span>
+                        <ul class="nav collapse" id="less">
                             <script id="less_template" type="text/x-handlebars-template">
                         {{#each less}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -150,8 +162,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/css/#sass">Using Sass</a>
-                        <ul class="nav" id="sass">
+                        <span href="#" data-toggle="collapse" data-parent="#colcss" data-target="#sass">Using Sass</span>
+                        <ul class="nav collapse" id="sass">
                         <script id="sass_template" type="text/x-handlebars-template">
                         {{#each sass}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -161,12 +173,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="colcomponents">
                 <h3>Components</h3>
-                <ul class="nav bs-docs-sidenav">
+                <ul class="nav">
                     <li>
-                        <a href="http://getbootstrap.com/components/#glyphicons">Glyphicons</a>
-                        <ul class="nav" id="glyphicons">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#glyphicons">Glyphicons</span>
+                        <ul class="nav collapse" id="glyphicons">
                         <script id="glyphicons_template" type="text/x-handlebars-template">
                         {{#each glyphicons}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -175,18 +187,18 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#dropdowns">Dropdowns</a>
-                        <ul class="nav" id="dropdowns">
-                        <script id="dropdowns_template" type="text/x-handlebars-template">
-                        {{#each dropdowns}}
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#dropdownscss">Dropdowns</span>
+                        <ul class="nav collapse" id="dropdownscss">
+                        <script id="dropdownscss_template" type="text/x-handlebars-template">
+                        {{#each dropdownscss}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
                         {{/each}}  
                         </script>  
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#btn-groups">Button groups</a>
-                        <ul class="nav" id="button_groups">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#button_groups">Button groups</span>
+                        <ul class="nav collapse" id="button_groups">
                         <script id="button_groups_template" type="text/x-handlebars-template">
                         {{#each button_groups}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -195,8 +207,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#btn-dropdowns">Button dropdowns</a>
-                        <ul class="nav" id="button_dropdowns">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#button_dropdowns">Button dropdowns</span>
+                        <ul class="nav collapse" id="button_dropdowns">
                         <script id="button_dropdowns_template" type="text/x-handlebars-template">
                         {{#each button_dropdowns}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -205,8 +217,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#input-groups">Input groups</a>
-                        <ul class="nav" id="input_groups">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#input-groups">Input groups</span>
+                        <ul class="nav collapse" id="input-groups">
                        <script id="input_groups_template" type="text/x-handlebars-template">
                         {{#each input_groups}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -215,8 +227,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#nav">Navs</a>
-                        <ul class="nav" id="navs">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#navs">Navs</span>
+                        <ul class="nav collapse" id="navs">
                         <script id="navs_template" type="text/x-handlebars-template">
                         {{#each navs}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -224,8 +236,8 @@
                         </script>                          </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#navbar">Navbar</a>
-                        <ul class="nav" id="navbar">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#navbar">Navbar</span>
+                        <ul class="nav collapse" id="navbar">
                         <script id="navbar_template" type="text/x-handlebars-template">
                         {{#each navbar}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -236,8 +248,8 @@
                     <li><a href="http://getbootstrap.com/components/#breadcrumbs">Breadcrumbs</a>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#pagination">Pagination</a>
-                        <ul class="nav" id="pagination">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#pagination">Pagination</span>
+                        <ul class="nav collapse" id="pagination">
                         <script id="pagination_template" type="text/x-handlebars-template">
                         {{#each pagination}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -254,8 +266,8 @@
                     <li><a href="http://getbootstrap.com/components/#page-header">Page header</a>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#thumbnails">Thumbnails</a>
-                        <ul class="nav" id="thumbnails">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#thumbnails">Thumbnails</span>
+                        <ul class="nav collapse" id="thumbnails">
                         <script id="thumbnails_template" type="text/x-handlebars-template">
                         {{#each thumbnails}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -264,8 +276,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#alerts">Alerts</a>
-                        <ul class="nav" id="alerts">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#alerts">Alerts</span>
+                        <ul class="nav collapse" id="alerts">
                         <script id="alerts_template" type="text/x-handlebars-template">
                         {{#each alerts}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -274,8 +286,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#progress">Progress bars</a>
-                        <ul class="nav" id="progress">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#progress">Progress bars</span>
+                        <ul class="nav collapse" id="progress">
                         <script id="progress_template" type="text/x-handlebars-template">
                         {{#each progress}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -284,8 +296,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#media">Media object</a>
-                        <ul class="nav" id="media">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#media">Media object</span>
+                        <ul class="nav collapse" id="media">
                         <script id="media_template" type="text/x-handlebars-template">
                         {{#each media}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -294,8 +306,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/components/#list-group">List group</a>
-                        <ul class="nav" id="list_group">
+                        <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#list_group">List group</span>
+                        <ul class="nav collapse" id="list_group">
                         <script id="list_group_template" type="text/x-handlebars-template">
                         {{#each list_group}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -304,8 +316,8 @@
                         </ul>
                     </li>
                     <li>
-                                <a href="http://getbootstrap.com/components/#panels">Panels</a>
-                        <ul class="nav" id="panels">
+                                <span href="#" data-toggle="collapse" data-parent="#colcomponents" data-target="#panels">Panels</span>
+                        <ul class="nav collapse" id="panels">
                         <script id="panels_template" type="text/x-handlebars-template">
                         {{#each panels}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -319,13 +331,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" id="coljs">
                 <h3>JavaScript</h3>
-                <ul class="nav bs-docs-sidenav">
+                <ul class="nav">
 
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#js-overview">Overview</a>
-                        <ul class="nav" id="js-overview">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#js-overview">Overview</span>
+                        <ul class="nav collapse" id="js-overview">
                         <script id="js-overview_template" type="text/x-handlebars-template">
                         {{#each js_overview}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -336,17 +348,17 @@
                     <li><a href="http://getbootstrap.com/javascript/#transitions">Transitions</a>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#modals">Modal</a>
-                        <ul class="nav" id="modals">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#modals">Modal</span>
+                        <ul class="nav collapse" id="modals">
                         <script id="modals_template" type="text/x-handlebars-template">
-                        {{#each js_modals}}
+                        {{#each modals}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
                         {{/each}}  
                         </script>                        </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#dropdowns">Dropdown</a>
-                        <ul class="nav" id="dropdowns">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#dropdowns">Dropdown</span>
+                        <ul class="nav collapse" id="dropdowns">
                         <script id="dropdowns_template" type="text/x-handlebars-template">
                         {{#each dropdowns}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -355,8 +367,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#scrollspy">Scrollspy</a>
-                        <ul class="nav" id="scrollspy">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#scrollspy">Scrollspy</span>
+                        <ul class="nav collapse" id="scrollspy">
                         <script id="scrollspy_template" type="text/x-handlebars-template">
                         {{#each scrollspy}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -365,8 +377,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#tabs">Tab</a>
-                        <ul class="nav" id="tabs">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#tabs">Tab</span>
+                        <ul class="nav collapse" id="tabs">
                         <script id="tabs_template" type="text/x-handlebars-template">
                         {{#each tabs}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -375,8 +387,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#tooltips">Tooltip</a>
-                        <ul class="nav" id="tooltips">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#tooltips">Tooltip</span>
+                        <ul class="nav collapse" id="tooltips">
                         <script id="tooltips_template" type="text/x-handlebars-template">
                         {{#each tooltips}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -385,8 +397,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#popovers">Popover</a>
-                        <ul class="nav" id="popovers">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#popovers">Popover</span>
+                        <ul class="nav collapse" id="popovers">
                         <script id="popovers_template" type="text/x-handlebars-template">
                         {{#each popovers}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -395,19 +407,19 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#alerts">Alert</a>
-                        <ul class="nav" id="alerts">
-                        <script id="alerts_template" type="text/x-handlebars-template">
-                        {{#each alerts}}
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#alert">Alert</span>
+                        <ul class="nav collapse" id="alert">
+                        <script id="alert_template" type="text/x-handlebars-template">
+                        {{#each alert}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
                         {{/each}}  
                         </script>
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#buttons">Button</a>
-                        <ul class="nav" id="buttons">
-                        <script id="buttons_template" type="text/x-handlebars-template">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#button">Button</span>
+                        <ul class="nav collapse" id="button">
+                        <script id="button_template" type="text/x-handlebars-template">
                         {{#each buttons}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
                         {{/each}}  
@@ -415,8 +427,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#collapse">Collapse</a>
-                        <ul class="nav" id="collapse">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#collapse">Collapse</span>
+                        <ul class="nav collapse" id="collapse">
                         <script id="collapse_template" type="text/x-handlebars-template">
                         {{#each collapse}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -425,8 +437,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#carousel">Carousel</a>
-                        <ul class="nav" id="carousel">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#carousel">Carousel</span>
+                        <ul class="nav collapse" id="carousel">
                         <script id="carousel_template" type="text/x-handlebars-template">
                         {{#each carousel}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -435,8 +447,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="http://getbootstrap.com/javascript/#affix">Affix</a>
-                        <ul class="nav" id="affix">
+                        <span href="#" data-toggle="collapse" data-parent="#coljs" data-target="#affix">Affix</span>
+                        <ul class="nav collapse" id="affix">
                         <script id="affix_template" type="text/x-handlebars-template">
                         {{#each affix}}
                         <li><a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
@@ -605,7 +617,7 @@
 {anchor: "glyphicons-how-to-use", anchor_name: "How to use"},
 {anchor: "glyphicons-examples", anchor_name: "Examples"}            
           ],
-        dropdowns: [
+        dropdownscss: [
           {anchor: "dropdowns-example", anchor_name: "Example"},
 {anchor: "dropdowns-alignment", anchor_name: "Alignment options"},
 {anchor: "dropdowns-headers", anchor_name: "Headers"},
@@ -700,8 +712,8 @@
     var compile = Handlebars.compile($('#glyphicons_template').html());
     $('#glyphicons').html(compile(components_section));
         
-    var compile = Handlebars.compile($('#dropdowns_template').html());
-    $('#dropdowns').html(compile(components_section));
+    var compile = Handlebars.compile($('#dropdownscss_template').html());
+    $('#dropdownscss').html(compile(components_section));
  
     var compile = Handlebars.compile($('#button_groups_template').html());
     $('#button_groups').html(compile(components_section));
@@ -710,7 +722,7 @@
     $('#button_dropdowns').html(compile(components_section));
 
     var compile = Handlebars.compile($('#input_groups_template').html());
-    $('#input_groups').html(compile(components_section));
+    $('#input-groups').html(compile(components_section));
         
     var compile = Handlebars.compile($('#navs_template').html());
     $('#navs').html(compile(components_section));
@@ -722,7 +734,7 @@
     $('#pagination').html(compile(components_section));
         
     var compile = Handlebars.compile($('#thumbnails_template').html());
-    $('#thumbnails_dropdowns').html(compile(components_section));
+    $('#thumbnails').html(compile(components_section));
         
     var compile = Handlebars.compile($('#alerts_template').html());
     $('#alerts').html(compile(components_section));
@@ -775,7 +787,7 @@
             {anchor: "popovers-examples", anchor_name: "Examples"},
 {anchor: "popovers-usage", anchor_name: "Usage"}
         ],
-        alerts: [
+        alert: [
             {anchor: "alerts-examples", anchor_name: "Examples"},
 {anchor: "alerts-usage", anchor_name: "Usage"}
         ],
@@ -820,11 +832,11 @@
     var compile = Handlebars.compile($('#popovers_template').html());
     $('#popovers').html(compile(javascript_section));
         
-    var compile = Handlebars.compile($('#alerts_template').html());
-    $('#alerts').html(compile(javascript_section));
+    var compile = Handlebars.compile($('#alert_template').html());
+    $('#alert').html(compile(javascript_section));
         
-    var compile = Handlebars.compile($('#buttons_template').html());
-    $('#buttons').html(compile(javascript_section));
+    var compile = Handlebars.compile($('#button_template').html());
+    $('#button').html(compile(javascript_section));
         
     var compile = Handlebars.compile($('#collapse_template').html());
     $('#collapse').html(compile(javascript_section));
@@ -838,5 +850,4 @@
         
     </script>
 </body>
-
 </html>
