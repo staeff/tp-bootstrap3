@@ -12,8 +12,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <style>
+       /* Permanent vertical scrollbar to avoid flicker     */
+        body, html {
+            min-height:101%;
+        }
+        
+        h3 {
+            padding-left: 10px;
+        }
+        
         .nav>li>a, .nav>li>span {
-            padding-left: 18px;
+            padding-left: 15px;
             font-weight: 700;
             color: #563d7c;
             background-color: transparent;
@@ -48,7 +57,7 @@
     <div class="container">
         <h1 class="text-center">Overview Bootstrap 3 - Documentation Sections</h1>
         <div class="row">
-            <div class="col-md-4" id="colcss">
+            <div class="col-sm-3 col-sm-offset-2" id="colcss">
                 <h3>CSS<small> + </small></h3>
                 <ul class="nav">
                     <li>
@@ -173,7 +182,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4" id="colcomponents">
+            <div class="col-sm-3" id="colcomponents">
                 <h3>Components<small> + </small></h3>
                 <ul class="nav">
                     <li>
@@ -331,7 +340,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4" id="coljs">
+            <div class="col-sm-3" id="coljs">
                 <h3>JavaScript<small> + </small></h3>
                 <ul class="nav">
 
