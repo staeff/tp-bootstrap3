@@ -55,11 +55,11 @@
 <body>
     
         
-    <script id="subkat-partial" type="text/x-handlebars-template">
-       <li>
-           <a href="{{../base_url}}{{../section}}/#{{anchor}}">{{anchor_name}}</a>
-        </li>
-    </script>
+<script id="subkat-partial" type="text/x-handlebars-template">    
+    <li>
+     <a href="{{parent.base_url}}{{parent.section}}/#{{anchor}}">{{anchor_name}}</a>
+   </li>
+</script>
     
     
     <div class="container">
@@ -73,7 +73,7 @@
                         <ul class="nav collapse" id="overview_css">
                         <script id="css_overview_template" type="text/x-handlebars-template">
                         {{#each overview_css}}
-                            {{> subkat}}
+                            {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}
                         </script>
                         </ul>
@@ -83,7 +83,7 @@
                         <ul class="nav collapse" id="grid">
                         <script id="grid_template" type="text/x-handlebars-template">
                         {{#each grid}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -93,7 +93,7 @@
                         <ul class="nav collapse" id="typography">
                         <script id="typography_template" type="text/x-handlebars-template">
                         {{#each typography}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -103,7 +103,7 @@
                         <ul class="nav collapse" id="code">
                         <script id="code_template" type="text/x-handlebars-template">
                         {{#each code}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -113,7 +113,7 @@
                         <ul class="nav collapse" id="tables">
                         <script id="tables_template" type="text/x-handlebars-template">
                         {{#each tables}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -123,7 +123,7 @@
                         <ul class="nav collapse" id="forms">
                         <script id="forms_template" type="text/x-handlebars-template">
                         {{#each forms}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -133,7 +133,7 @@
                         <ul class="nav collapse" id="buttons">
 <script id="buttons_template" type="text/x-handlebars-template">
                         {{#each buttons}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>                            
                         </ul>
@@ -143,7 +143,7 @@
                         <ul class="nav collapse" id="images">css
                             <script id="images_template" type="text/x-handlebars-template">
                         {{#each images}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -153,7 +153,7 @@
                         <ul class="nav collapse" id="helperclasses">
 <script id="helper_classes_template" type="text/x-handlebars-template">
                         {{#each helperclasses}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -163,7 +163,7 @@
                         <ul class="nav collapse" id="responsive_utilities">
 <script id="responsive_utilities_template" type="text/x-handlebars-template">
                         {{#each responsive_utilities}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -173,7 +173,7 @@
                         <ul class="nav collapse" id="less">
                             <script id="less_template" type="text/x-handlebars-template">
                         {{#each less}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -183,7 +183,7 @@
                         <ul class="nav collapse" id="sass">
                         <script id="sass_template" type="text/x-handlebars-template">
                         {{#each sass}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -198,7 +198,7 @@
                         <ul class="nav collapse" id="glyphicons">
                         <script id="glyphicons_template" type="text/x-handlebars-template">
                         {{#each glyphicons}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -208,7 +208,7 @@
                         <ul class="nav collapse" id="dropdownscss">
                         <script id="dropdownscss_template" type="text/x-handlebars-template">
                         {{#each dropdownscss}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -218,7 +218,7 @@
                         <ul class="nav collapse" id="button_groups">
                         <script id="button_groups_template" type="text/x-handlebars-template">
                         {{#each button_groups}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -228,7 +228,7 @@
                         <ul class="nav collapse" id="button_dropdowns">
                         <script id="button_dropdowns_template" type="text/x-handlebars-template">
                         {{#each button_dropdowns}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -238,7 +238,7 @@
                         <ul class="nav collapse" id="input-groups">
                        <script id="input_groups_template" type="text/x-handlebars-template">
                         {{#each input_groups}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>      
                         </ul>
@@ -248,7 +248,7 @@
                         <ul class="nav collapse" id="navs">
                         <script id="navs_template" type="text/x-handlebars-template">
                         {{#each navs}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>                          </ul>
                     </li>
@@ -257,7 +257,7 @@
                         <ul class="nav collapse" id="navbar">
                         <script id="navbar_template" type="text/x-handlebars-template">
                         {{#each navbar}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -269,7 +269,7 @@
                         <ul class="nav collapse" id="pagination">
                         <script id="pagination_template" type="text/x-handlebars-template">
                         {{#each pagination}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -287,7 +287,7 @@
                         <ul class="nav collapse" id="thumbnails">
                         <script id="thumbnails_template" type="text/x-handlebars-template">
                         {{#each thumbnails}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -297,7 +297,7 @@
                         <ul class="nav collapse" id="alerts">
                         <script id="alerts_template" type="text/x-handlebars-template">
                         {{#each alerts}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -307,7 +307,7 @@
                         <ul class="nav collapse" id="progress">
                         <script id="progress_template" type="text/x-handlebars-template">
                         {{#each progress}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -317,7 +317,7 @@
                         <ul class="nav collapse" id="media">
                         <script id="media_template" type="text/x-handlebars-template">
                         {{#each media}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -327,7 +327,7 @@
                         <ul class="nav collapse" id="list_group">
                         <script id="list_group_template" type="text/x-handlebars-template">
                         {{#each list_group}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -337,7 +337,7 @@
                         <ul class="nav collapse" id="panels">
                         <script id="panels_template" type="text/x-handlebars-template">
                         {{#each panels}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>  
                         </ul>
@@ -357,7 +357,7 @@
                         <ul class="nav collapse" id="js-overview">
                         <script id="js-overview_template" type="text/x-handlebars-template">
                         {{#each js_overview}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -369,7 +369,7 @@
                         <ul class="nav collapse" id="modals">
                         <script id="modals_template" type="text/x-handlebars-template">
                         {{#each modals}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>                        </ul>
                     </li>
@@ -378,7 +378,7 @@
                         <ul class="nav collapse" id="dropdowns">
                         <script id="dropdowns_template" type="text/x-handlebars-template">
                         {{#each dropdowns}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -388,7 +388,7 @@
                         <ul class="nav collapse" id="scrollspy">
                         <script id="scrollspy_template" type="text/x-handlebars-template">
                         {{#each scrollspy}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -398,7 +398,7 @@
                         <ul class="nav collapse" id="tabs">
                         <script id="tabs_template" type="text/x-handlebars-template">
                         {{#each tabs}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -408,7 +408,7 @@
                         <ul class="nav collapse" id="tooltips">
                         <script id="tooltips_template" type="text/x-handlebars-template">
                         {{#each tooltips}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -418,7 +418,7 @@
                         <ul class="nav collapse" id="popovers">
                         <script id="popovers_template" type="text/x-handlebars-template">
                         {{#each popovers}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -428,7 +428,7 @@
                         <ul class="nav collapse" id="alert">
                         <script id="alert_template" type="text/x-handlebars-template">
                         {{#each alert}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -438,7 +438,7 @@
                         <ul class="nav collapse" id="button">
                         <script id="button_template" type="text/x-handlebars-template">
                         {{#each buttons}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -448,7 +448,7 @@
                         <ul class="nav collapse" id="collapse">
                         <script id="collapse_template" type="text/x-handlebars-template">
                         {{#each collapse}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -458,7 +458,7 @@
                         <ul class="nav collapse" id="carousel">
                         <script id="carousel_template" type="text/x-handlebars-template">
                         {{#each carousel}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>
                         </ul>
@@ -468,7 +468,7 @@
                         <ul class="nav collapse" id="affix">
                         <script id="affix_template" type="text/x-handlebars-template">
                         {{#each affix}}
-                        {{> subkat}}
+                        {{#include parent=.. }}{{> subkat}}{{/include}}
                         {{/each}}  
                         </script>                        </ul>
                     </li>
@@ -506,7 +506,19 @@
 
     // Register the subkat - partial
     Handlebars.registerPartial("subkat", $("#subkat-partial").html()); 
-        
+     
+    // register helper to access parents in partial
+    // see http://stackoverflow.com/a/18026063
+    Handlebars.registerHelper('include', function(options) {
+    var context = {},
+        mergeContext = function(obj) {
+            for(var k in obj)context[k]=obj[k];
+        };
+    mergeContext(this);
+    mergeContext(options.hash);
+    return options.fn(context);
+    }); 
+    
         
     // create css section with handlebarsjs
     css_section = {
