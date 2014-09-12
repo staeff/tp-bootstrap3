@@ -53,15 +53,6 @@
 </head>
 
 <body>
-    
-        
-<script id="subkat-partial" type="text/x-handlebars-template">    
-    <li>
-     <a href="{{parent.base_url}}{{parent.section}}/#{{anchor}}">{{anchor_name}}</a>
-   </li>
-</script>
-    
-    
     <div class="container">
         <h1 class="text-center">Overview Bootstrap 3 - Documentation Sections</h1>
         <div class="row">
@@ -505,7 +496,7 @@
     });
 
     // Register the subkat - partial
-    Handlebars.registerPartial("subkat", $("#subkat-partial").html()); 
+    Handlebars.registerPartial("subkat", '<li><a href="{{parent.base_url}}{{parent.section}}/#{{anchor}}">{{anchor_name}}</a></li>'); 
      
     // register helper to access parents in partial
     // see http://stackoverflow.com/a/18026063
