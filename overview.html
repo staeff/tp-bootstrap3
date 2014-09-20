@@ -21,6 +21,10 @@
             padding-left: 10px;
         }
         
+        #coljs h3, #colcomponents h3, #colcss h3 {
+            cursor: pointer;
+        }
+        
         .nav>li>a, .nav>li>span {
             padding-left: 15px;
             font-weight: 700;
@@ -477,20 +481,22 @@
         $("a").attr("target","_blank");
         
          // assign the columns to Variables
-         var $colcss = $('#colcss');
-         var $colcomp = $('#colcomponents');
-         var $coljs = $('#coljs');
+         var $colcss = $('#colcss'),
+             $csscollapse = $colcss.find('.collapse'),
+             $colcomp = $('#colcomponents'),
+             $compcollapse = $colcomp.find('.collapse'),
+             $coljs = $('#coljs'),
+             $jscollapse = $coljs.find('.collapse');
         
         
-        
-       $colcss.find('h3>small').click(function () {
-            $colcss.find('.nav>li>ul').toggleClass('collapse');
+       $colcss.find('h3').click(function () {
+           $csscollapse.collapse('toggle');
        });
-         $colcomp.find('h3>small').click(function () {
-            $colcomp.find('.nav>li>ul').toggleClass('collapse');
+         $colcomp.find('h3').click(function () {
+            $compcollapse.collapse('toggle');
        });
-         $coljs.find('h3>small').click(function () {
-            $coljs.find('.nav>li>ul').toggleClass('collapse');
+         $coljs.find('h3').click(function () {
+            $jscollapse.collapse('toggle');
        });
 
     });
