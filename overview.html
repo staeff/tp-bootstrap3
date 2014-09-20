@@ -482,23 +482,43 @@
         
          // assign the columns to Variables
          var $colcss = $('#colcss'),
+             $cssh3 = $colcss.find('h3'),
              $csscollapse = $colcss.find('.collapse'),
              $colcomp = $('#colcomponents'),
+             $comph3 = $colcomp.find('h3'),
              $compcollapse = $colcomp.find('.collapse'),
              $coljs = $('#coljs'),
+             $jsh3 = $coljs.find('h3'),
              $jscollapse = $coljs.find('.collapse');
         
         
-       $colcss.find('h3').click(function () {
-           $csscollapse.collapse('toggle');
+       $cssh3.click(function () {
+           if ($colcss.find('.in').length == 0 ) {
+               $csscollapse.collapse('show');
+               $cssh3.find('small').text('  ‒');
+           } else {
+               $csscollapse.collapse('hide');
+               $cssh3.find('small').text(' +');
+           }    
        });
-         $colcomp.find('h3').click(function () {
-            $compcollapse.collapse('toggle');
+       $comph3.click(function () {
+           if ($colcomp.find('.in').length == 0 ) {
+               $compcollapse.collapse('show');
+               $comph3.find('small').text('  ‒');
+           } else {
+               $compcollapse.collapse('hide');
+               $comph3.find('small').text(' +');
+           }    
        });
-         $coljs.find('h3').click(function () {
-            $jscollapse.collapse('toggle');
+       $jsh3.click(function () {
+           if ($coljs.find('.in').length == 0 ) {
+               $jscollapse.collapse('show');
+               $jsh3.find('small').text('  ‒');
+           } else {
+               $jscollapse.collapse('hide');
+               $jsh3.find('small').text(' +');
+           }    
        });
-
     });
 
     // Register the subkat - partial
