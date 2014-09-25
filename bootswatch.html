@@ -80,7 +80,8 @@
         <div class="container text-center">
             <h1>Theme gallery</h1>
             <p>This page shows off different bootstrap themes from <a href="http://bootswatch.com/">bootswatch.com</a>.<br> 
-                They can be switched by using the "Choose style" - dropdown in the Navbar.</p>
+                They can be switched by using the "Choose style" - dropdown in the Navbar.<br>
+            Current font: <span id="fontname">Error</span></p>
 
             <div class="btn-group">
                 <a href="#" class="btn btn-lg btn-success">Buy Now!</a>
@@ -464,6 +465,17 @@
                 .appendTo(li);
             });
             
+            function getFont() {
+               // Determine the currently used font following
+               // http://stackoverflow.com/a/7444724
+               // but the webfont doesnt seem to be working
+               var div = document.getElementById( 'fontname' );
+               var fontname = window.getComputedStyle( div, null ).getPropertyValue( 'font-family' );
+               $('#fontname').text(fontname);
+            };
+            
+            getFont();
+            
             $("#navbar-collapse .dropdown-menu a").click(function() {
                 var style = $(this).data('style');
                 var url = "//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/" + style + "/bootstrap.min.css";
@@ -473,6 +485,7 @@
                     expires: 365,
                     path: '/'
                 });
+                getFont();
             });
         });
     </script>
