@@ -1,243 +1,243 @@
-{'overview_css': [{
-        anchor: "overview-doctype",
-        anchor_name: "HTML5 doctype"
+{"overview_css": [{
+        "anchor": "overview-doctype",
+        "anchor_name": "HTML5 doctype"
     }, {
-        anchor: "overview-mobile",
-        anchor_name: "Mobile first"
+        "anchor": "overview-mobile",
+        "anchor_name": "Mobile first"
     }, {
-        anchor: "overview-type-links",
-        anchor_name: "Typography and links"
+        "anchor": "overview-type-links",
+        "anchor_name": "Typography and links"
     }, {
-        anchor: "overview-normalize",
-        anchor_name: "Normalize.css"
+        "anchor": "overview-normalize",
+        "anchor_name": "Normalize.css"
     }, {
-        anchor: "overview-container",
-        anchor_name: "Containers"
+        "anchor": "overview-container",
+        "anchor_name": "Containers"
     }],
-    grid: [{
-        anchor: "grid-intro",
-        anchor_name: "Introduction"
+    "grid": [{
+        "anchor": "grid-intro",
+        "anchor_name": "Introduction"
     }, {
-        anchor: "grid-media-queries",
-        anchor_name: "Media queries"
+        "anchor": "grid-media-queries",
+        "anchor_name": "Media queries"
     }, {
-        anchor: "grid-options",
-        anchor_name: "Grid options"
+        "anchor": "grid-options",
+        "anchor_name": "Grid options"
     }, {
-        anchor: "grid-example-basic",
-        anchor_name: "Ex: Stacked-to-horizontal"
+        "anchor": "grid-example-basic",
+        "anchor_name": "Ex: Stacked-to-horizontal"
     }, {
-        anchor: "grid-example-fluid",
-        anchor_name: "Ex: Fluid container"
+        "anchor": "grid-example-fluid",
+        "anchor_name": "Ex: Fluid container"
     }, {
-        anchor: "grid-example-mixed",
-        anchor_name: "Ex: Mobile and desktops"
+        "anchor": "grid-example-mixed",
+        "anchor_name": "Ex: Mobile and desktops"
     }, {
-        anchor: "grid-example-mixed-complete",
-        anchor_name: "Ex: Mobile, tablet, desktops"
+        "anchor": "grid-example-mixed-complete",
+        "anchor_name": "Ex: Mobile, tablet, desktops"
     }, {
-        anchor: "grid-example-wrapping",
-        anchor_name: "Ex: Column wrapping"
+        "anchor": "grid-example-wrapping",
+        "anchor_name": "Ex: Column wrapping"
     }, {
-        anchor: "grid-responsive-resets",
-        anchor_name: "Responsive column resets"
+        "anchor": "grid-responsive-resets",
+        "anchor_name": "Responsive column resets"
     }, {
-        anchor: "grid-offsetting",
-        anchor_name: "Offsetting columns"
+        "anchor": "grid-offsetting",
+        "anchor_name": "Offsetting columns"
     }, {
-        anchor: "grid-nesting",
-        anchor_name: "Nesting columns"
+        "anchor": "grid-nesting",
+        "anchor_name": "Nesting columns"
     }, {
-        anchor: "grid-column-ordering",
-        anchor_name: "Column ordering"
+        "anchor": "grid-column-ordering",
+        "anchor_name": "Column ordering"
     }, {
-        anchor: "grid-less",
-        anchor_name: "Less mixins and variables"
+        "anchor": "grid-less",
+        "anchor_name": "Less mixins and variables"
     }],
-    typography: [{
-        anchor: "type-headings",
-        anchor_name: "Headings"
+    "typography": [{
+        "anchor": "type-headings",
+        "anchor_name": "Headings"
     }, {
-        anchor: "type-body-copy",
-        anchor_name: "Body copy"
+        "anchor": "type-body-copy",
+        "anchor_name": "Body copy"
     }, {
-        anchor: "type-inline-text",
-        anchor_name: "Inline text elements"
+        "anchor": "type-inline-text",
+        "anchor_name": "Inline text elements"
     }, {
-        anchor: "type-alignment",
-        anchor_name: "Alignment classes"
+        "anchor": "type-alignment",
+        "anchor_name": "Alignment classes"
     }, {
-        anchor: "type-transformation",
-        anchor_name: "Transformation classes"
+        "anchor": "type-transformation",
+        "anchor_name": "Transformation classes"
     }, {
-        anchor: "type-abbreviations",
-        anchor_name: "Abbreviations"
+        "anchor": "type-abbreviations",
+        "anchor_name": "Abbreviations"
     }, {
-        anchor: "type-addresses",
-        anchor_name: "Addresses"
+        "anchor": "type-addresses",
+        "anchor_name": "Addresses"
     }, {
-        anchor: "type-blockquotes",
-        anchor_name: "Blockquotes"
+        "anchor": "type-blockquotes",
+        "anchor_name": "Blockquotes"
     }, {
-        anchor: "type-lists",
-        anchor_name: "Lists"
+        "anchor": "type-lists",
+        "anchor_name": "Lists"
     }],
-    code: [{
-        anchor: "code-inline",
-        anchor_name: "Inline code"
+    "code": [{
+        "anchor": "code-inline",
+        "anchor_name": "Inline code"
     }, {
-        anchor: "code-user-input",
-        anchor_name: "User input"
+        "anchor": "code-user-input",
+        "anchor_name": "User input"
     }, {
-        anchor: "code-block",
-        anchor_name: "Blocks of code"
+        "anchor": "code-block",
+        "anchor_name": "Blocks of code"
     }, {
-        anchor: "code-variables",
-        anchor_name: "Variables"
+        "anchor": "code-variables",
+        "anchor_name": "Variables"
     }, {
-        anchor: "code-sample-output",
-        anchor_name: "Sample output"
+        "anchor": "code-sample-output",
+        "anchor_name": "Sample output"
     }],
-    tables: [{
-        anchor: "tables-example",
-        anchor_name: "Basic example"
+    "tables": [{
+        "anchor": "tables-example",
+        "anchor_name": "Basic example"
     }, {
-        anchor: "tables-striped",
-        anchor_name: "Striped rows"
+        "anchor": "tables-striped",
+        "anchor_name": "Striped rows"
     }, {
-        anchor: "tables-bordered",
-        anchor_name: "Bordered table"
+        "anchor": "tables-bordered",
+        "anchor_name": "Bordered table"
     }, {
-        anchor: "tables-hover-rows",
-        anchor_name: "Hover rows"
+        "anchor": "tables-hover-rows",
+        "anchor_name": "Hover rows"
     }, {
-        anchor: "tables-condensed",
-        anchor_name: "Condensed table"
+        "anchor": "tables-condensed",
+        "anchor_name": "Condensed table"
     }, {
-        anchor: "tables-contextual-classes",
-        anchor_name: "Contextual classes"
+        "anchor": "tables-contextual-classes",
+        "anchor_name": "Contextual classes"
     }, {
-        anchor: "tables-responsive",
-        anchor_name: "Responsive tables"
+        "anchor": "tables-responsive",
+        "anchor_name": "Responsive tables"
     }],
-    forms: [{
-        anchor: "forms-example",
-        anchor_name: "Basic example"
+    "forms": [{
+        "anchor": "forms-example",
+        "anchor_name": "Basic example"
     }, {
-        anchor: "forms-inline",
-        anchor_name: "Inline form"
+        "anchor": "forms-inline",
+        "anchor_name": "Inline form"
     }, {
-        anchor: "forms-horizontal",
-        anchor_name: "Horizontal form"
+        "anchor": "forms-horizontal",
+        "anchor_name": "Horizontal form"
     }, {
-        anchor: "forms-controls",
-        anchor_name: "Supported controls"
+        "anchor": "forms-controls",
+        "anchor_name": "Supported controls"
     }, {
-        anchor: "forms-controls-static",
-        anchor_name: "Static control"
+        "anchor": "forms-controls-static",
+        "anchor_name": "Static control"
     }, {
-        anchor: "forms-control-focus",
-        anchor_name: "Focus state"
+        "anchor": "forms-control-focus",
+        "anchor_name": "Focus state"
     }, {
-        anchor: "forms-control-disabled",
-        anchor_name: "Disabled state"
+        "anchor": "forms-control-disabled",
+        "anchor_name": "Disabled state"
     }, {
-        anchor: "forms-control-readonly",
-        anchor_name: "Readonly state"
+        "anchor": "forms-control-readonly",
+        "anchor_name": "Readonly state"
     }, {
-        anchor: "forms-control-validation",
-        anchor_name: "Validation states"
+        "anchor": "forms-control-validation",
+        "anchor_name": "Validation states"
     }, {
-        anchor: "forms-control-sizes",
-        anchor_name: "Control sizing"
+        "anchor": "forms-control-sizes",
+        "anchor_name": "Control sizing"
     }, {
-        anchor: "forms-help-text",
-        anchor_name: "Help text"
+        "anchor": "forms-help-text",
+        "anchor_name": "Help text"
     }],
-    buttons: [{
-        anchor: "buttons-options",
-        anchor_name: "Options"
+    "buttons": [{
+        "anchor": "buttons-options",
+        "anchor_name": "Options"
     }, {
-        anchor: "buttons-sizes",
-        anchor_name: "Sizes"
+        "anchor": "buttons-sizes",
+        "anchor_name": "Sizes"
     }, {
-        anchor: "buttons-active",
-        anchor_name: "Active state"
+        "anchor": "buttons-active",
+        "anchor_name": "Active state"
     }, {
-        anchor: "buttons-disabled",
-        anchor_name: "Disabled state"
+        "anchor": "buttons-disabled",
+        "anchor_name": "Disabled state"
     }, {
-        anchor: "buttons-tags",
-        anchor_name: "Button tags"
+        "anchor": "buttons-tags",
+        "anchor_name": "Button tags"
     }],
-    images: [{
-        anchor: "images-responsive",
-        anchor_name: "Responsive images"
+    "images": [{
+        "anchor": "images-responsive",
+        "anchor_name": "Responsive images"
     }, {
-        anchor: "images-shapes",
-        anchor_name: "Image shapes"
+        "anchor": "images-shapes",
+        "anchor_name": "Image shapes"
     }],
-    helperclasses: [{
-        anchor: "helper-classes-colors",
-        anchor_name: "Contextual colors"
+    "helperclasses": [{
+        "anchor": "helper-classes-colors",
+        "anchor_name": "Contextual colors"
     }, {
-        anchor: "helper-classes-backgrounds",
-        anchor_name: "Contextual backgrounds"
+        "anchor": "helper-classes-backgrounds",
+        "anchor_name": "Contextual backgrounds"
     }, {
-        anchor: "helper-classes-close",
-        anchor_name: "Close icon"
+        "anchor": "helper-classes-close",
+        "anchor_name": "Close icon"
     }, {
-        anchor: "helper-classes-carets",
-        anchor_name: "Carets"
+        "anchor": "helper-classes-carets",
+        "anchor_name": "Carets"
     }, {
-        anchor: "helper-classes-floats",
-        anchor_name: "Quick floats"
+        "anchor": "helper-classes-floats",
+        "anchor_name": "Quick floats"
     }, {
-        anchor: "helper-classes-center",
-        anchor_name: "Center content blocks"
+        "anchor": "helper-classes-center",
+        "anchor_name": "Center content blocks"
     }, {
-        anchor: "helper-classes-clearfix",
-        anchor_name: "Clearfix"
+        "anchor": "helper-classes-clearfix",
+        "anchor_name": "Clearfix"
     }, {
-        anchor: "helper-classes-show-hide",
-        anchor_name: "Showing and hiding content"
+        "anchor": "helper-classes-show-hide",
+        "anchor_name": "Showing and hiding content"
     }, {
-        anchor: "helper-classes-screen-readers",
-        anchor_name: "Screen reader content"
+        "anchor": "helper-classes-screen-readers",
+        "anchor_name": "Screen reader content"
     }, {
-        anchor: "helper-classes-image-replacement",
-        anchor_name: "Image replacement"
+        "anchor": "helper-classes-image-replacement",
+        "anchor_name": "Image replacement"
     }],
-    responsive_utilities: [{
-        anchor: "responsive-utilities-classes",
-        anchor_name: "Available classes"
+    "responsive_utilities": [{
+        "anchor": "responsive-utilities-classes",
+        "anchor_name": "Available classes"
     }, {
-        anchor: "responsive-utilities-print",
-        anchor_name: "Print classes"
+        "anchor": "responsive-utilities-print",
+        "anchor_name": "Print classes"
     }, {
-        anchor: "responsive-utilities-tests",
-        anchor_name: "Test cases"
+        "anchor": "responsive-utilities-tests",
+        "anchor_name": "Test cases"
     }],
-    less: [{
-        anchor: "less-bootstrap",
-        anchor_name: "Compiling Bootstrap"
+    "less": [{
+        "anchor": "less-bootstrap",
+        "anchor_name": "Compiling Bootstrap"
     }, {
-        anchor: "less-variables",
-        anchor_name: "Variables"
+        "anchor": "less-variables",
+        "anchor_name": "Variables"
     }, {
-        anchor: "less-mixins-vendor",
-        anchor_name: "Vendor mixins"
+        "anchor": "less-mixins-vendor",
+        "anchor_name": "Vendor mixins"
     }, {
-        anchor: "less-mixins-utility",
-        anchor_name: "Utility mixins"
+        "anchor": "less-mixins-utility",
+        "anchor_name": "Utility mixins"
     }],
-    sass: [{
-        anchor: "sass-contents",
-        anchor_name: "What's included"
+    "sass": [{
+        "anchor": "sass-contents",
+        "anchor_name": "What's included"
     }, {
-        anchor: "sass-installation",
-        anchor_name: "Rails install"
+        "anchor": "sass-installation",
+        "anchor_name": "Rails install"
     }],
-    section: "css",
-    base_url: "http://getbootstrap.com/"
+    "section": "css",
+    "base_url": "http://getbootstrap.com/"
 }
