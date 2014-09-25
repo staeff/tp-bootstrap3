@@ -1,292 +1,292 @@
 {
-   glyphicons:[
+   "glyphicons":[
       {
-         anchor:"glyphicons-glyphs",
-         anchor_name:"Available glyphs"
+         "anchor":"glyphicons-glyphs",
+         "anchor_name":"Available glyphs"
       },
       {
-         anchor:"glyphicons-how-to-use",
-         anchor_name:"How to use"
+         "anchor":"glyphicons-how-to-use",
+         "anchor_name":"How to use"
       },
       {
-         anchor:"glyphicons-examples",
-         anchor_name:"Examples"
+         "anchor":"glyphicons-examples",
+         "anchor_name":"Examples"
       }
    ],
-   dropdownscss:[
+   "dropdownscss":[
       {
-         anchor:"dropdowns-example",
-         anchor_name:"Example"
+         "anchor":"dropdowns-example",
+         "anchor_name":"Example"
       },
       {
-         anchor:"dropdowns-alignment",
-         anchor_name:"Alignment options"
+         "anchor":"dropdowns-alignment",
+         "anchor_name":"Alignment options"
       },
       {
-         anchor:"dropdowns-headers",
-         anchor_name:"Headers"
+         "anchor":"dropdowns-headers",
+         "anchor_name":"Headers"
       },
       {
-         anchor:"dropdowns-disabled",
-         anchor_name:"Disabled menu items"
+         "anchor":"dropdowns-disabled",
+         "anchor_name":"Disabled menu items"
       }
    ],
-   button_groups:[
+   "button_groups":[
       {
-         anchor:"btn-groups-single",
-         anchor_name:"Basic example"
+         "anchor":"btn-groups-single",
+         "anchor_name":"Basic example"
       },
       {
-         anchor:"btn-groups-toolbar",
-         anchor_name:"Button toolbar"
+         "anchor":"btn-groups-toolbar",
+         "anchor_name":"Button toolbar"
       },
       {
-         anchor:"btn-groups-sizing",
-         anchor_name:"Sizing"
+         "anchor":"btn-groups-sizing",
+         "anchor_name":"Sizing"
       },
       {
-         anchor:"btn-groups-nested",
-         anchor_name:"Nesting"
+         "anchor":"btn-groups-nested",
+         "anchor_name":"Nesting"
       },
       {
-         anchor:"btn-groups-vertical",
-         anchor_name:"Vertical variation"
+         "anchor":"btn-groups-vertical",
+         "anchor_name":"Vertical variation"
       },
       {
-         anchor:"btn-groups-justified",
-         anchor_name:"Justified link variation"
+         "anchor":"btn-groups-justified",
+         "anchor_name":"Justified link variation"
       }
    ],
-   button_dropdowns:[
+   "button_dropdowns":[
       {
-         anchor:"btn-dropdowns-single",
-         anchor_name:"Single button dropdowns"
+         "anchor":"btn-dropdowns-single",
+         "anchor_name":"Single button dropdowns"
       },
       {
-         anchor:"btn-dropdowns-split",
-         anchor_name:"Split button dropdowns"
+         "anchor":"btn-dropdowns-split",
+         "anchor_name":"Split button dropdowns"
       },
       {
-         anchor:"btn-dropdowns-sizing",
-         anchor_name:"Sizing"
+         "anchor":"btn-dropdowns-sizing",
+         "anchor_name":"Sizing"
       },
       {
-         anchor:"btn-dropdowns-dropup",
-         anchor_name:"Dropup variation"
+         "anchor":"btn-dropdowns-dropup",
+         "anchor_name":"Dropup variation"
       }
    ],
-   input_groups:[
+   "input_groups":[
       {
-         anchor:"input-groups-basic",
-         anchor_name:"Basic example"
+         "anchor":"input-groups-basic",
+         "anchor_name":"Basic example"
       },
       {
-         anchor:"input-groups-sizing",
-         anchor_name:"Sizing"
+         "anchor":"input-groups-sizing",
+         "anchor_name":"Sizing"
       },
       {
-         anchor:"input-groups-checkboxes-radios",
-         anchor_name:"Checkbox and radios addons"
+         "anchor":"input-groups-checkboxes-radios",
+         "anchor_name":"Checkbox and radios addons"
       },
       {
-         anchor:"input-groups-buttons",
-         anchor_name:"Button addons"
+         "anchor":"input-groups-buttons",
+         "anchor_name":"Button addons"
       },
       {
-         anchor:"input-groups-buttons-dropdowns",
-         anchor_name:"Buttons with dropdowns"
+         "anchor":"input-groups-buttons-dropdowns",
+         "anchor_name":"Buttons with dropdowns"
       },
       {
-         anchor:"input-groups-buttons-segmented",
-         anchor_name:"Segmented buttons"
+         "anchor":"input-groups-buttons-segmented",
+         "anchor_name":"Segmented buttons"
       }
    ],
-   navs:[
+   "navs":[
       {
-         anchor:"nav-tabs",
-         anchor_name:"Tabs"
+         "anchor":"nav-tabs",
+         "anchor_name":"Tabs"
       },
       {
-         anchor:"nav-pills",
-         anchor_name:"Pills"
+         "anchor":"nav-pills",
+         "anchor_name":"Pills"
       },
       {
-         anchor:"nav-justified",
-         anchor_name:"Justified nav"
+         "anchor":"nav-justified",
+         "anchor_name":"Justified nav"
       },
       {
-         anchor:"nav-disabled-links",
-         anchor_name:"Disabled links"
+         "anchor":"nav-disabled-links",
+         "anchor_name":"Disabled links"
       },
       {
-         anchor:"nav-dropdowns",
-         anchor_name:"Using dropdowns"
+         "anchor":"nav-dropdowns",
+         "anchor_name":"Using dropdowns"
       }
    ],
-   navbar:[
+   "navbar":[
       {
-         anchor:"navbar-default",
-         anchor_name:"Default navbar"
+         "anchor":"navbar-default",
+         "anchor_name":"Default navbar"
       },
       {
-         anchor:"navbar-forms",
-         anchor_name:"Forms"
+         "anchor":"navbar-forms",
+         "anchor_name":"Forms"
       },
       {
-         anchor:"navbar-buttons",
-         anchor_name:"Buttons"
+         "anchor":"navbar-buttons",
+         "anchor_name":"Buttons"
       },
       {
-         anchor:"navbar-text",
-         anchor_name:"Text"
+         "anchor":"navbar-text",
+         "anchor_name":"Text"
       },
       {
-         anchor:"navbar-links",
-         anchor_name:"Non-nav links"
+         "anchor":"navbar-links",
+         "anchor_name":"Non-nav links"
       },
       {
-         anchor:"navbar-component-alignment",
-         anchor_name:"Component alignment"
+         "anchor":"navbar-component-alignment",
+         "anchor_name":"Component alignment"
       },
       {
-         anchor:"navbar-fixed-top",
-         anchor_name:"Fixed to top"
+         "anchor":"navbar-fixed-top",
+         "anchor_name":"Fixed to top"
       },
       {
-         anchor:"navbar-fixed-bottom",
-         anchor_name:"Fixed to bottom"
+         "anchor":"navbar-fixed-bottom",
+         "anchor_name":"Fixed to bottom"
       },
       {
-         anchor:"navbar-static-top",
-         anchor_name:"Static top"
+         "anchor":"navbar-static-top",
+         "anchor_name":"Static top"
       },
       {
-         anchor:"navbar-inverted",
-         anchor_name:"Inverted navbar"
+         "anchor":"navbar-inverted",
+         "anchor_name":"Inverted navbar"
       }
    ],
-   pagination:[
+   "pagination":[
       {
-         anchor:"pagination-default",
-         anchor_name:"Default pagination"
+         "anchor":"pagination-default",
+         "anchor_name":"Default pagination"
       },
       {
-         anchor:"pagination-pager",
-         anchor_name:"Pager"
+         "anchor":"pagination-pager",
+         "anchor_name":"Pager"
       }
    ],
-   thumbnails:[
+   "thumbnails":[
       {
-         anchor:"thumbnails-default",
-         anchor_name:"Default example"
+         "anchor":"thumbnails-default",
+         "anchor_name":"Default example"
       },
       {
-         anchor:"thumbnails-custom-content",
-         anchor_name:"Custom content"
+         "anchor":"thumbnails-custom-content",
+         "anchor_name":"Custom content"
       }
    ],
-   alerts:[
+   "alerts":[
       {
-         anchor:"alerts-examples",
-         anchor_name:"Examples"
+         "anchor":"alerts-examples",
+         "anchor_name":"Examples"
       },
       {
-         anchor:"alerts-dismissible",
-         anchor_name:"Dismissible alerts"
+         "anchor":"alerts-dismissible",
+         "anchor_name":"Dismissible alerts"
       },
       {
-         anchor:"alerts-links",
-         anchor_name:"Links in alerts"
+         "anchor":"alerts-links",
+         "anchor_name":"Links in alerts"
       }
    ],
-   progress:[
+   "progress":[
       {
-         anchor:"progress-basic",
-         anchor_name:"Basic example"
+         "anchor":"progress-basic",
+         "anchor_name":"Basic example"
       },
       {
-         anchor:"progress-label",
-         anchor_name:"With label"
+         "anchor":"progress-label",
+         "anchor_name":"With label"
       },
       {
-         anchor:"progress-low-percentages",
-         anchor_name:"Low percentages"
+         "anchor":"progress-low-percentages",
+         "anchor_name":"Low percentages"
       },
       {
-         anchor:"progress-alternatives",
-         anchor_name:"Contextual alternatives"
+         "anchor":"progress-alternatives",
+         "anchor_name":"Contextual alternatives"
       },
       {
-         anchor:"progress-striped",
-         anchor_name:"Striped"
+         "anchor":"progress-striped",
+         "anchor_name":"Striped"
       },
       {
-         anchor:"progress-animated",
-         anchor_name:"Animated"
+         "anchor":"progress-animated",
+         "anchor_name":"Animated"
       },
       {
-         anchor:"progress-stacked",
-         anchor_name:"Stacked"
+         "anchor":"progress-stacked",
+         "anchor_name":"Stacked"
       }
    ],
-   media:[
+   "media":[
       {
-         anchor:"media-default",
-         anchor_name:"Default media"
+         "anchor":"media-default",
+         "anchor_name":"Default media"
       },
       {
-         anchor:"media-list",
-         anchor_name:"Media list"
+         "anchor":"media-list",
+         "anchor_name":"Media list"
       }
    ],
-   list_group:[
+   "list_group":[
       {
-         anchor:"list-group-basic",
-         anchor_name:"Basic example"
+         "anchor":"list-group-basic",
+         "anchor_name":"Basic example"
       },
       {
-         anchor:"list-group-badges",
-         anchor_name:"Badges"
+         "anchor":"list-group-badges",
+         "anchor_name":"Badges"
       },
       {
-         anchor:"list-group-linked",
-         anchor_name:"Linked items"
+         "anchor":"list-group-linked",
+         "anchor_name":"Linked items"
       },
       {
-         anchor:"list-group-disabled",
-         anchor_name:"Disabled items"
+         "anchor":"list-group-disabled",
+         "anchor_name":"Disabled items"
       },
       {
-         anchor:"list-group-contextual-classes",
-         anchor_name:"Contextual classes"
+         "anchor":"list-group-contextual-classes",
+         "anchor_name":"Contextual classes"
       },
       {
-         anchor:"list-group-custom-content",
-         anchor_name:"Custom content"
+         "anchor":"list-group-custom-content",
+         "anchor_name":"Custom content"
       }
    ],
-   panels:[
+   "panels":[
       {
-         anchor:"panels-basic",
-         anchor_name:"Basic example"
+         "anchor":"panels-basic",
+         "anchor_name":"Basic example"
       },
       {
-         anchor:"panels-heading",
-         anchor_name:"Panel with heading"
+         "anchor":"panels-heading",
+         "anchor_name":"Panel with heading"
       },
       {
-         anchor:"panels-alternatives",
-         anchor_name:"Contextual alternatives"
+         "anchor":"panels-alternatives",
+         "anchor_name":"Contextual alternatives"
       },
       {
-         anchor:"panels-tables",
-         anchor_name:"With tables"
+         "anchor":"panels-tables",
+         "anchor_name":"With tables"
       },
       {
-         anchor:"panels-list-group",
-         anchor_name:"With list groups"
+         "anchor":"panels-list-group",
+         "anchor_name":"With list groups"
       }
    ],
-   section:"components",
-   base_url:"http://getbootstrap.com/"
+   "section":"components",
+   "base_url":"http://getbootstrap.com/"
 }
