@@ -1,0 +1,686 @@
+{
+    "css": {"overview_css": [{
+        "anchor": "overview-doctype",
+        "anchor_name": "HTML5 doctype"
+    }, {
+        "anchor": "overview-mobile",
+        "anchor_name": "Mobile first"
+    }, {
+        "anchor": "overview-type-links",
+        "anchor_name": "Typography and links"
+    }, {
+        "anchor": "overview-normalize",
+        "anchor_name": "Normalize.css"
+    }, {
+        "anchor": "overview-container",
+        "anchor_name": "Containers"
+    }],
+    "grid": [{
+        "anchor": "grid-intro",
+        "anchor_name": "Introduction"
+    }, {
+        "anchor": "grid-media-queries",
+        "anchor_name": "Media queries"
+    }, {
+        "anchor": "grid-options",
+        "anchor_name": "Grid options"
+    }, {
+        "anchor": "grid-example-basic",
+        "anchor_name": "Ex: Stacked-to-horizontal"
+    }, {
+        "anchor": "grid-example-fluid",
+        "anchor_name": "Ex: Fluid container"
+    }, {
+        "anchor": "grid-example-mixed",
+        "anchor_name": "Ex: Mobile and desktops"
+    }, {
+        "anchor": "grid-example-mixed-complete",
+        "anchor_name": "Ex: Mobile, tablet, desktops"
+    }, {
+        "anchor": "grid-example-wrapping",
+        "anchor_name": "Ex: Column wrapping"
+    }, {
+        "anchor": "grid-responsive-resets",
+        "anchor_name": "Responsive column resets"
+    }, {
+        "anchor": "grid-offsetting",
+        "anchor_name": "Offsetting columns"
+    }, {
+        "anchor": "grid-nesting",
+        "anchor_name": "Nesting columns"
+    }, {
+        "anchor": "grid-column-ordering",
+        "anchor_name": "Column ordering"
+    }, {
+        "anchor": "grid-less",
+        "anchor_name": "Less mixins and variables"
+    }],
+    "typography": [{
+        "anchor": "type-headings",
+        "anchor_name": "Headings"
+    }, {
+        "anchor": "type-body-copy",
+        "anchor_name": "Body copy"
+    }, {
+        "anchor": "type-inline-text",
+        "anchor_name": "Inline text elements"
+    }, {
+        "anchor": "type-alignment",
+        "anchor_name": "Alignment classes"
+    }, {
+        "anchor": "type-transformation",
+        "anchor_name": "Transformation classes"
+    }, {
+        "anchor": "type-abbreviations",
+        "anchor_name": "Abbreviations"
+    }, {
+        "anchor": "type-addresses",
+        "anchor_name": "Addresses"
+    }, {
+        "anchor": "type-blockquotes",
+        "anchor_name": "Blockquotes"
+    }, {
+        "anchor": "type-lists",
+        "anchor_name": "Lists"
+    }],
+    "code": [{
+        "anchor": "code-inline",
+        "anchor_name": "Inline code"
+    }, {
+        "anchor": "code-user-input",
+        "anchor_name": "User input"
+    }, {
+        "anchor": "code-block",
+        "anchor_name": "Blocks of code"
+    }, {
+        "anchor": "code-variables",
+        "anchor_name": "Variables"
+    }, {
+        "anchor": "code-sample-output",
+        "anchor_name": "Sample output"
+    }],
+    "tables": [{
+        "anchor": "tables-example",
+        "anchor_name": "Basic example"
+    }, {
+        "anchor": "tables-striped",
+        "anchor_name": "Striped rows"
+    }, {
+        "anchor": "tables-bordered",
+        "anchor_name": "Bordered table"
+    }, {
+        "anchor": "tables-hover-rows",
+        "anchor_name": "Hover rows"
+    }, {
+        "anchor": "tables-condensed",
+        "anchor_name": "Condensed table"
+    }, {
+        "anchor": "tables-contextual-classes",
+        "anchor_name": "Contextual classes"
+    }, {
+        "anchor": "tables-responsive",
+        "anchor_name": "Responsive tables"
+    }],
+    "forms": [{
+        "anchor": "forms-example",
+        "anchor_name": "Basic example"
+    }, {
+        "anchor": "forms-inline",
+        "anchor_name": "Inline form"
+    }, {
+        "anchor": "forms-horizontal",
+        "anchor_name": "Horizontal form"
+    }, {
+        "anchor": "forms-controls",
+        "anchor_name": "Supported controls"
+    }, {
+        "anchor": "forms-controls-static",
+        "anchor_name": "Static control"
+    }, {
+        "anchor": "forms-control-focus",
+        "anchor_name": "Focus state"
+    }, {
+        "anchor": "forms-control-disabled",
+        "anchor_name": "Disabled state"
+    }, {
+        "anchor": "forms-control-readonly",
+        "anchor_name": "Readonly state"
+    }, {
+        "anchor": "forms-control-validation",
+        "anchor_name": "Validation states"
+    }, {
+        "anchor": "forms-control-sizes",
+        "anchor_name": "Control sizing"
+    }, {
+        "anchor": "forms-help-text",
+        "anchor_name": "Help text"
+    }],
+    "buttons": [{
+        "anchor": "buttons-options",
+        "anchor_name": "Options"
+    }, {
+        "anchor": "buttons-sizes",
+        "anchor_name": "Sizes"
+    }, {
+        "anchor": "buttons-active",
+        "anchor_name": "Active state"
+    }, {
+        "anchor": "buttons-disabled",
+        "anchor_name": "Disabled state"
+    }, {
+        "anchor": "buttons-tags",
+        "anchor_name": "Button tags"
+    }],
+    "images": [{
+        "anchor": "images-responsive",
+        "anchor_name": "Responsive images"
+    }, {
+        "anchor": "images-shapes",
+        "anchor_name": "Image shapes"
+    }],
+    "helperclasses": [{
+        "anchor": "helper-classes-colors",
+        "anchor_name": "Contextual colors"
+    }, {
+        "anchor": "helper-classes-backgrounds",
+        "anchor_name": "Contextual backgrounds"
+    }, {
+        "anchor": "helper-classes-close",
+        "anchor_name": "Close icon"
+    }, {
+        "anchor": "helper-classes-carets",
+        "anchor_name": "Carets"
+    }, {
+        "anchor": "helper-classes-floats",
+        "anchor_name": "Quick floats"
+    }, {
+        "anchor": "helper-classes-center",
+        "anchor_name": "Center content blocks"
+    }, {
+        "anchor": "helper-classes-clearfix",
+        "anchor_name": "Clearfix"
+    }, {
+        "anchor": "helper-classes-show-hide",
+        "anchor_name": "Showing and hiding content"
+    }, {
+        "anchor": "helper-classes-screen-readers",
+        "anchor_name": "Screen reader content"
+    }, {
+        "anchor": "helper-classes-image-replacement",
+        "anchor_name": "Image replacement"
+    }],
+    "responsive_utilities": [{
+        "anchor": "responsive-utilities-classes",
+        "anchor_name": "Available classes"
+    }, {
+        "anchor": "responsive-utilities-print",
+        "anchor_name": "Print classes"
+    }, {
+        "anchor": "responsive-utilities-tests",
+        "anchor_name": "Test cases"
+    }],
+    "less": [{
+        "anchor": "less-bootstrap",
+        "anchor_name": "Compiling Bootstrap"
+    }, {
+        "anchor": "less-variables",
+        "anchor_name": "Variables"
+    }, {
+        "anchor": "less-mixins-vendor",
+        "anchor_name": "Vendor mixins"
+    }, {
+        "anchor": "less-mixins-utility",
+        "anchor_name": "Utility mixins"
+    }],
+    "sass": [{
+        "anchor": "sass-contents",
+        "anchor_name": "What's included"
+    }, {
+        "anchor": "sass-installation",
+        "anchor_name": "Rails install"
+    }],
+    "section": "css",
+    "base_url": "http://getbootstrap.com/"
+},
+    "components": {
+   "glyphicons":[
+      {
+         "anchor":"glyphicons-glyphs",
+         "anchor_name":"Available glyphs"
+      },
+      {
+         "anchor":"glyphicons-how-to-use",
+         "anchor_name":"How to use"
+      },
+      {
+         "anchor":"glyphicons-examples",
+         "anchor_name":"Examples"
+      }
+   ],
+   "dropdownscss":[
+      {
+         "anchor":"dropdowns-example",
+         "anchor_name":"Example"
+      },
+      {
+         "anchor":"dropdowns-alignment",
+         "anchor_name":"Alignment options"
+      },
+      {
+         "anchor":"dropdowns-headers",
+         "anchor_name":"Headers"
+      },
+      {
+         "anchor":"dropdowns-disabled",
+         "anchor_name":"Disabled menu items"
+      }
+   ],
+   "button_groups":[
+      {
+         "anchor":"btn-groups-single",
+         "anchor_name":"Basic example"
+      },
+      {
+         "anchor":"btn-groups-toolbar",
+         "anchor_name":"Button toolbar"
+      },
+      {
+         "anchor":"btn-groups-sizing",
+         "anchor_name":"Sizing"
+      },
+      {
+         "anchor":"btn-groups-nested",
+         "anchor_name":"Nesting"
+      },
+      {
+         "anchor":"btn-groups-vertical",
+         "anchor_name":"Vertical variation"
+      },
+      {
+         "anchor":"btn-groups-justified",
+         "anchor_name":"Justified link variation"
+      }
+   ],
+   "button_dropdowns":[
+      {
+         "anchor":"btn-dropdowns-single",
+         "anchor_name":"Single button dropdowns"
+      },
+      {
+         "anchor":"btn-dropdowns-split",
+         "anchor_name":"Split button dropdowns"
+      },
+      {
+         "anchor":"btn-dropdowns-sizing",
+         "anchor_name":"Sizing"
+      },
+      {
+         "anchor":"btn-dropdowns-dropup",
+         "anchor_name":"Dropup variation"
+      }
+   ],
+   "input_groups":[
+      {
+         "anchor":"input-groups-basic",
+         "anchor_name":"Basic example"
+      },
+      {
+         "anchor":"input-groups-sizing",
+         "anchor_name":"Sizing"
+      },
+      {
+         "anchor":"input-groups-checkboxes-radios",
+         "anchor_name":"Checkbox and radios addons"
+      },
+      {
+         "anchor":"input-groups-buttons",
+         "anchor_name":"Button addons"
+      },
+      {
+         "anchor":"input-groups-buttons-dropdowns",
+         "anchor_name":"Buttons with dropdowns"
+      },
+      {
+         "anchor":"input-groups-buttons-segmented",
+         "anchor_name":"Segmented buttons"
+      }
+   ],
+   "navs":[
+      {
+         "anchor":"nav-tabs",
+         "anchor_name":"Tabs"
+      },
+      {
+         "anchor":"nav-pills",
+         "anchor_name":"Pills"
+      },
+      {
+         "anchor":"nav-justified",
+         "anchor_name":"Justified nav"
+      },
+      {
+         "anchor":"nav-disabled-links",
+         "anchor_name":"Disabled links"
+      },
+      {
+         "anchor":"nav-dropdowns",
+         "anchor_name":"Using dropdowns"
+      }
+   ],
+   "navbar":[
+      {
+         "anchor":"navbar-default",
+         "anchor_name":"Default navbar"
+      },
+      {
+         "anchor":"navbar-forms",
+         "anchor_name":"Forms"
+      },
+      {
+         "anchor":"navbar-buttons",
+         "anchor_name":"Buttons"
+      },
+      {
+         "anchor":"navbar-text",
+         "anchor_name":"Text"
+      },
+      {
+         "anchor":"navbar-links",
+         "anchor_name":"Non-nav links"
+      },
+      {
+         "anchor":"navbar-component-alignment",
+         "anchor_name":"Component alignment"
+      },
+      {
+         "anchor":"navbar-fixed-top",
+         "anchor_name":"Fixed to top"
+      },
+      {
+         "anchor":"navbar-fixed-bottom",
+         "anchor_name":"Fixed to bottom"
+      },
+      {
+         "anchor":"navbar-static-top",
+         "anchor_name":"Static top"
+      },
+      {
+         "anchor":"navbar-inverted",
+         "anchor_name":"Inverted navbar"
+      }
+   ],
+   "pagination":[
+      {
+         "anchor":"pagination-default",
+         "anchor_name":"Default pagination"
+      },
+      {
+         "anchor":"pagination-pager",
+         "anchor_name":"Pager"
+      }
+   ],
+   "thumbnails":[
+      {
+         "anchor":"thumbnails-default",
+         "anchor_name":"Default example"
+      },
+      {
+         "anchor":"thumbnails-custom-content",
+         "anchor_name":"Custom content"
+      }
+   ],
+   "alerts":[
+      {
+         "anchor":"alerts-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"alerts-dismissible",
+         "anchor_name":"Dismissible alerts"
+      },
+      {
+         "anchor":"alerts-links",
+         "anchor_name":"Links in alerts"
+      }
+   ],
+   "progress":[
+      {
+         "anchor":"progress-basic",
+         "anchor_name":"Basic example"
+      },
+      {
+         "anchor":"progress-label",
+         "anchor_name":"With label"
+      },
+      {
+         "anchor":"progress-low-percentages",
+         "anchor_name":"Low percentages"
+      },
+      {
+         "anchor":"progress-alternatives",
+         "anchor_name":"Contextual alternatives"
+      },
+      {
+         "anchor":"progress-striped",
+         "anchor_name":"Striped"
+      },
+      {
+         "anchor":"progress-animated",
+         "anchor_name":"Animated"
+      },
+      {
+         "anchor":"progress-stacked",
+         "anchor_name":"Stacked"
+      }
+   ],
+   "media":[
+      {
+         "anchor":"media-default",
+         "anchor_name":"Default media"
+      },
+      {
+         "anchor":"media-list",
+         "anchor_name":"Media list"
+      }
+   ],
+   "list_group":[
+      {
+         "anchor":"list-group-basic",
+         "anchor_name":"Basic example"
+      },
+      {
+         "anchor":"list-group-badges",
+         "anchor_name":"Badges"
+      },
+      {
+         "anchor":"list-group-linked",
+         "anchor_name":"Linked items"
+      },
+      {
+         "anchor":"list-group-disabled",
+         "anchor_name":"Disabled items"
+      },
+      {
+         "anchor":"list-group-contextual-classes",
+         "anchor_name":"Contextual classes"
+      },
+      {
+         "anchor":"list-group-custom-content",
+         "anchor_name":"Custom content"
+      }
+   ],
+   "panels":[
+      {
+         "anchor":"panels-basic",
+         "anchor_name":"Basic example"
+      },
+      {
+         "anchor":"panels-heading",
+         "anchor_name":"Panel with heading"
+      },
+      {
+         "anchor":"panels-alternatives",
+         "anchor_name":"Contextual alternatives"
+      },
+      {
+         "anchor":"panels-tables",
+         "anchor_name":"With tables"
+      },
+      {
+         "anchor":"panels-list-group",
+         "anchor_name":"With list groups"
+      }
+   ],
+   "section":"components",
+   "base_url":"http://getbootstrap.com/"
+},
+    "javascript":
+    {
+   "js_overview":[
+      {
+         "anchor":"js-individual-compiled",
+         "anchor_name":"Individual or compiled"
+      },
+      {
+         "anchor":"js-data-attrs",
+         "anchor_name":"Data attributes"
+      },
+      {
+         "anchor":"js-programmatic-api",
+         "anchor_name":"Programmatic API"
+      },
+      {
+         "anchor":"js-noconflict",
+         "anchor_name":"No conflict"
+      },
+      {
+         "anchor":"js-events",
+         "anchor_name":"Events"
+      },
+      {
+         "anchor":"callout-third-party-libs",
+         "anchor_name":"Third-party libraries"
+      }
+   ],
+   "modals":[
+      {
+         "anchor":"modals-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"modals-sizes",
+         "anchor_name":"Sizes"
+      },
+      {
+         "anchor":"modals-remove-animation",
+         "anchor_name":"Remove animation"
+      },
+      {
+         "anchor":"modals-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "dropdowns":[
+      {
+         "anchor":"dropdowns-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"dropdowns-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "scrollspy":[
+      {
+         "anchor":"scrollspy-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"scrollspy-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "tabs":[
+      {
+         "anchor":"tabs-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"tabs-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "tooltips":[
+      {
+         "anchor":"tooltips-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"tooltips-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "popovers":[
+      {
+         "anchor":"popovers-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"popovers-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "alert":[
+      {
+         "anchor":"alerts-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"alerts-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "buttons":[
+      {
+         "anchor":"buttons-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"buttons-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "collapse":[
+      {
+         "anchor":"collapse-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"collapse-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "carousel":[
+      {
+         "anchor":"carousel-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"carousel-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "affix":[
+      {
+         "anchor":"affix-examples",
+         "anchor_name":"Examples"
+      },
+      {
+         "anchor":"affix-usage",
+         "anchor_name":"Usage"
+      }
+   ],
+   "section":"javascript",
+   "base_url":"http://getbootstrap.com/"
+}
+}

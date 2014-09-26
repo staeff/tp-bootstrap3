@@ -477,8 +477,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
     <script>
     $(function(){
-         // Open all links in new tab
-        $("a").attr("target","_blank");
         
          // assign the columns to Variables
          var $colcss = $('#colcss'),
@@ -522,7 +520,7 @@
     });
 
     // Register the subkat - partial
-    Handlebars.registerPartial("subkat", '<li><a href="{{parent.base_url}}{{parent.section}}/#{{anchor}}">{{anchor_name}}</a></li>'); 
+    Handlebars.registerPartial("subkat", '<li><a href="{{parent.base_url}}{{parent.section}}/#{{anchor}}" target="_blank">{{anchor_name}}</a></li>'); 
      
     // register helper to access parents in partial
     // see http://stackoverflow.com/a/18026063
@@ -539,132 +537,132 @@
     // read navigation structure from json-file and apply it
     // with handlebars to the side    
 
-    // css column
-    $.getJSON( "js/css_section.json", function( data ) {
+    $.getJSON( "js/sections.json", function( data ) {
+
+        // css column
+        var cssdata = data['css'];
 
         var compile = Handlebars.compile($('#css_overview_template').html());
-        $('#overview_css').html(compile(data));
+        $('#overview_css').html(compile(cssdata));
     
         var compile = Handlebars.compile($('#grid_template').html());
-        $('#grid').html(compile(data));
+        $('#grid').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#typography_template').html());
-        $('#typography').html(compile(data));
+        $('#typography').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#code_template').html());
-        $('#code').html(compile(data));
+        $('#code').html(compile(cssdata));
     
         var compile = Handlebars.compile($('#tables_template').html());
-        $('#tables').html(compile(data));
+        $('#tables').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#forms_template').html());
-        $('#forms').html(compile(data));
+        $('#forms').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#buttons_template').html());
-        $('#buttons').html(compile(data));
+        $('#buttons').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#images_template').html());
-        $('#images').html(compile(data));
+        $('#images').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#helper_classes_template').html());
-        $('#helperclasses').html(compile(data));
+        $('#helperclasses').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#responsive_utilities_template').html());
-        $('#responsive_utilities').html(compile(data));
+        $('#responsive_utilities').html(compile(cssdata));
 
         var compile = Handlebars.compile($('#less_template').html());
-        $('#less').html(compile(data));
+        $('#less').html(compile(cssdata));
         
         var compile = Handlebars.compile($('#sass_template').html());
-        $('#sass').html(compile(data));
-    });    
+        $('#sass').html(compile(cssdata));
     
-    // components column
-    $.getJSON( "js/components_section.json", function( data ) {
+        // components column
+        var componentsdata = data['components'];
+        
         var compile = Handlebars.compile($('#glyphicons_template').html());
-        $('#glyphicons').html(compile(data));
+        $('#glyphicons').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#dropdownscss_template').html());
-        $('#dropdownscss').html(compile(data));
+        $('#dropdownscss').html(compile(componentsdata));
      
         var compile = Handlebars.compile($('#button_groups_template').html());
-        $('#button_groups').html(compile(data));
+        $('#button_groups').html(compile(componentsdata));
     
         var compile = Handlebars.compile($('#button_dropdowns_template').html());
-        $('#button_dropdowns').html(compile(data));
+        $('#button_dropdowns').html(compile(componentsdata));
     
         var compile = Handlebars.compile($('#input_groups_template').html());
-        $('#input-groups').html(compile(data));
+        $('#input-groups').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#navs_template').html());
-        $('#navs').html(compile(data));
+        $('#navs').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#navbar_template').html());
-        $('#navbar').html(compile(data));
+        $('#navbar').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#pagination_template').html());
-        $('#pagination').html(compile(data));
+        $('#pagination').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#thumbnails_template').html());
-        $('#thumbnails').html(compile(data));
+        $('#thumbnails').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#alerts_template').html());
-        $('#alerts').html(compile(data));
+        $('#alerts').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#progress_template').html());
-        $('#progress').html(compile(data));
+        $('#progress').html(compile(componentsdata));
             
         var compile = Handlebars.compile($('#media_template').html());
-        $('#media').html(compile(data));
+        $('#media').html(compile(componentsdata));
         
         var compile = Handlebars.compile($('#list_group_template').html());
-        $('#list_group').html(compile(data));
+        $('#list_group').html(compile(componentsdata));
         
         var compile = Handlebars.compile($('#panels_template').html());
-        $('#panels').html(compile(data));
-    });
+        $('#panels').html(compile(componentsdata));
 
-    // js column
-    $.getJSON( "js/js_section.json", function( data ) {
-    // create javascript section with handlebars
+        // js column
+        var jsdata = data['javascript'];
+        
         var compile = Handlebars.compile($('#js-overview_template').html());
-        $('#js-overview').html(compile(data));
+        $('#js-overview').html(compile(jsdata));
 
         var compile = Handlebars.compile($('#modals_template').html());
-        $('#modals').html(compile(data));
+        $('#modals').html(compile(jsdata));
 
         var compile = Handlebars.compile($('#dropdowns_template').html());
-        $('#dropdowns').html(compile(data));
+        $('#dropdowns').html(compile(jsdata));
  
         var compile = Handlebars.compile($('#scrollspy_template').html());
-        $('#scrollspy').html(compile(data));
+        $('#scrollspy').html(compile(jsdata));
  
         var compile = Handlebars.compile($('#tabs_template').html());
-        $('#tabs').html(compile(data));   
+        $('#tabs').html(compile(jsdata));   
         
         var compile = Handlebars.compile($('#tooltips_template').html());
-        $('#tooltips').html(compile(data));
+        $('#tooltips').html(compile(jsdata));
  
         var compile = Handlebars.compile($('#popovers_template').html());
-        $('#popovers').html(compile(data));
+        $('#popovers').html(compile(jsdata));
         
         var compile = Handlebars.compile($('#alert_template').html());
-        $('#alert').html(compile(data));
+        $('#alert').html(compile(jsdata));
         
         var compile = Handlebars.compile($('#button_template').html());
-        $('#button').html(compile(data));
+        $('#button').html(compile(jsdata));
         
         var compile = Handlebars.compile($('#collapse_template').html());
-        $('#collapse').html(compile(data));
+        $('#collapse').html(compile(jsdata));
         
         var compile = Handlebars.compile($('#carousel_template').html());
-        $('#carousel').html(compile(data));
+        $('#carousel').html(compile(jsdata));
         
         var compile = Handlebars.compile($('#affix_template').html());
-        $('#affix').html(compile(data));
-
-    });
-        
+        $('#affix').html(compile(jsdata));
+    });    
+       
     </script>
 </body>
 </html>
