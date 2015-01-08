@@ -6,9 +6,10 @@ Twitter's Bootstrap is an excellent set of carefully crafted user interface elem
 
 ## News
 
-* Overwiew (like a sitemap) of bootstrap 3 documentation available at https://vision-index.codio.io/bootstrap3-docs-overview.html.
-* Overview redone using Handlebarsjs for templating. More flexible to experiment with changes (e.g. collapsibles) https://vision-index.codio.io/overview.html
+* pages viewable on github (http://staeff.github.io/tp-bootstrap3/)
 * A gallery of the different themes provided by http://bootswatch.com/ available at https://vision-index.codio.io/bootswatch.html
+* Overview redone using Handlebarsjs for templating. More flexible to experiment with changes (e.g. collapsibles) https://vision-index.codio.io/overview.html
+* Overwiew (like a sitemap) of bootstrap 3 documentation available at https://vision-index.codio.io/bootstrap3-docs-overview.html.
 
 ## Notes
 
